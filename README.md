@@ -16,8 +16,8 @@ A simple, free-to-host website for Mid Herts Divers scuba diving club.
 
 The following services are registered under the club email **website@midhertsdivers.com** (Google Group):
 
-- **GitHub** — hosts the source code repository
-- **Netlify** — hosts the live site, handles forms, identity, and deploys
+- **GitHub** — username `mhd-1784`, hosts the source code repository
+- **Netlify** — logged in via the GitHub account above, hosts the live site, handles forms, identity, and deploys
 
 This email is a shared group so access isn't tied to any single committee member. Add/remove members from the Google Group to manage who receives account notifications.
 

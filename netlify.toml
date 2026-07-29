@@ -3,6 +3,15 @@
   publish = "_site"
   functions = "src/netlify/functions"
 
+# Only deploy the main branch to production
+# Other branches won't trigger production deploys
+[context.production]
+  branch = "main"
+
+# Disable automatic branch deploys (saves credits)
+[context.deploy-preview]
+  command = "npm run build"
+
 # Form notifications — sends to hello@midhertsdivers.com
 # Configure in Netlify UI: Forms > Notifications > Email
 
