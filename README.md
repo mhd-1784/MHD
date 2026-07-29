@@ -12,6 +12,15 @@ A simple, free-to-host website for Mid Herts Divers scuba diving club.
 - **Fully responsive** → works on mobile, tablet, and desktop
 - **Free hosting** on Netlify
 
+## Admin Accounts
+
+The following services are registered under the club email **website@midhertsdivers.com** (Google Group):
+
+- **GitHub** — hosts the source code repository
+- **Netlify** — hosts the live site, handles forms, identity, and deploys
+
+This email is a shared group so access isn't tied to any single committee member. Add/remove members from the Google Group to manage who receives account notifications.
+
 ## Deployment to Netlify
 
 ### 1. Push to GitHub
@@ -100,7 +109,7 @@ MHD/
 4. Write using the rich text editor, upload images
 5. Click "Publish"
 
-Note: After publishing, you'll need to manually update `articles/index.json` for the homepage listing until a build step is added. Alternatively, consider adding a static site generator (Eleventy/Hugo) later for automatic article page generation.
+Note: After publishing, Netlify automatically rebuilds the site. The new article will appear on the homepage and articles page within about 30 seconds.
 
 ## Monthly Cost
 
