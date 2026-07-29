@@ -14,8 +14,8 @@
     --dark-light: #16213e;
     --text: #333;
     --text-light: #666;
-    --bg: #ffffff;
-    --bg-alt: #f8f9fa;
+    --bg: #f5f5f0;
+    --bg-alt: #eef1ed;
     --bg-dark: #0f1923;
     --radius: 12px;
     --shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
@@ -377,7 +377,7 @@ img {
 }
 
 .feature-card {
-    background: #fff;
+    background: #f0f4f8;
     border-radius: var(--radius);
     padding: 40px 32px;
     box-shadow: var(--shadow-lg);
