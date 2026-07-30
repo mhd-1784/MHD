@@ -55,7 +55,7 @@ title: Scuba Diving and Snorkelling Club
             <a href="/articles/" class="see-all">See all &raquo;</a>
         </div>
         <div class="articles-grid">
-            {% for article in collections.articles | reverse %}
+            {% for article in collections.articles %}
             {% if loop.index <= 3 %}
             <article class="article-card">
                 <div class="article-image">

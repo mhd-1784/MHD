@@ -180,10 +180,126 @@ function initAnimations() {
     });
 }
 
+// Article gallery: wrap consecutive images into grid containers
+function initArticleGallery() {
+    const articleBody = document.querySelector('.article-body');
+    if (!articleBody) return;
+
+    // Find all direct children — paragraphs containing only an img count as "image nodes"
+    const children = Array.from(articleBody.children);
+    let i = 0;
+
+    while (i < children.length) {
+        const node = children[i];
+
+        // Check if this node is an image or a paragraph containing only an image
+        if (isImageNode(node)) {
+            // Collect consecutive image nodes
+            const batch = [node];
+            let j = i + 1;
+            while (j < children.length && isImageNode(children[j])) {
+                batch.push(children[j]);
+                j++;
+            }
+
+            // Wrap the batch in a gallery div
+            const gallery = document.createElement('div');
+            gallery.className = 'article-gallery';
+
+            // Add modifier class based on count
+            if (batch.length === 1) {
+                gallery.classList.add('article-gallery--1');
+            } else if (batch.length === 2) {
+                gallery.classList.add('article-gallery--2');
+            }
+
+            // Insert gallery before the first image in the batch
+            articleBody.insertBefore(gallery, batch[0]);
+
+            // Move images into the gallery
+            batch.forEach(imgNode => {
+                const img = imgNode.tagName === 'IMG' ? imgNode : imgNode.querySelector('img');
+                if (img) {
+                    gallery.appendChild(img);
+                }
+                // Remove the now-empty wrapper (p tag or original node)
+                if (imgNode.parentNode === articleBody) {
+                    articleBody.removeChild(imgNode);
+                }
+            });
+
+            // Update children array and index
+            const updatedChildren = Array.from(articleBody.children);
+            i = updatedChildren.indexOf(gallery) + 1;
+            children.length = 0;
+            children.push(...updatedChildren);
+        } else {
+            i++;
+        }
+    }
+
+    // Add lightbox functionality to gallery images (not single images)
+    initLightbox();
+}
+
+function isImageNode(node) {
+    if (!node || !node.tagName) return false;
+    if (node.tagName === 'IMG') return true;
+    if (node.tagName === 'P') {
+        const children = node.children;
+        // A paragraph with only an img (and maybe whitespace text)
+        if (children.length === 1 && children[0].tagName === 'IMG') {
+            const textContent = node.textContent.trim();
+            return textContent === '' || textContent === node.querySelector('img').alt;
+        }
+    }
+    return false;
+}
+
+function initLightbox() {
+    // Create lightbox element
+    const lightbox = document.createElement('div');
+    lightbox.className = 'lightbox';
+    lightbox.setAttribute('role', 'dialog');
+    lightbox.setAttribute('aria-label', 'Image viewer');
+    const lightboxImg = document.createElement('img');
+    lightboxImg.alt = 'Enlarged photo';
+    lightbox.appendChild(lightboxImg);
+    document.body.appendChild(lightbox);
+
+    // Click gallery images to open lightbox
+    document.querySelectorAll('.article-gallery img').forEach(img => {
+        // Skip single-image galleries
+        if (img.closest('.article-gallery--1')) return;
+
+        img.addEventListener('click', () => {
+            lightboxImg.src = img.src;
+            lightboxImg.alt = img.alt || 'Enlarged photo';
+            lightbox.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        });
+    });
+
+    // Close lightbox on click
+    lightbox.addEventListener('click', () => {
+        lightbox.classList.remove('active');
+        document.body.style.overflow = '';
+    });
+
+    // Close on Escape key
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && lightbox.classList.contains('active')) {
+            lightbox.classList.remove('active');
+            document.body.style.overflow = '';
+        }
+    });
+}
+
 // Init
 document.addEventListener('DOMContentLoaded', () => {
     loadInstagramFeed();
     loadArticles();
+    initArticleGallery();
     // Delay animations to allow content to load
     setTimeout(initAnimations, 500);
 });

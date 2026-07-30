@@ -120,6 +120,19 @@ Note: After publishing, Netlify automatically rebuilds the site. The new article
 - Identity: Free (5 invited users)
 - SSL: Free
 
+## Next Steps
+
+- [ ] **Set up Netlify Identity + Git Gateway** — enables the CMS at `/admin/` for article writers
+- [ ] **Set up form email notifications** — so contact/try-dive submissions email hello@midhertsdivers.com
+- [ ] **Set up Cloudinary** — free image CDN for article images (replace hotlinked images from old site)
+- [ ] **Configure Decap CMS with Cloudinary** — so writers can upload images directly in the editor
+- [ ] **Migrate images from old site** — before switching off the old site, move referenced images to Cloudinary
+- [ ] **Point custom domain** — set midhertsdivers.com to the new Netlify site
+- [ ] **Import remaining 2025 articles** — a few more may be needed from the old site
+- [ ] **Add favicon and Open Graph meta tags** — for nice browser tab icon and social media previews
+- [ ] **Set up Instagram gallery** (optional) — connect Instagram API when ready to replace static gallery
+- [ ] **Set up branch protection** — so collaborators push to `draft` branch, merge to `main` for deploys
+
 ## Future Improvements
 
 - Add Eleventy or Hugo for automatic article page generation from markdown

@@ -14,7 +14,7 @@ permalink: /articles/
 <section class="articles">
     <div class="container">
         <div class="articles-grid">
-            {% for article in collections.articles | reverse %}
+            {% for article in collections.articles %}
             <article class="article-card">
                 <div class="article-image">
                     {% if article.data.image %}
