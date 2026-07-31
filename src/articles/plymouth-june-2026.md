@@ -2,7 +2,7 @@
 title: "Plymouth, June 2026"
 date: 2026-06-29
 author: "Mid Herts Divers"
-image: "https://midhertsdivers.com/storage/images/articles/plymouth-2026/group.jpeg"
+image: "https://res.cloudinary.com/h2zix6yq/image/upload/v1785484707/mhd/articles/plymouth-2026/group.jpg"
 excerpt: "A big thank you to Andy Bloss for organising another brilliant Mid Herts trip down to Plymouth. Everything ran smoothly from start to finish and was made even better by skipper Sam and crew member Alex from InDeep Diving."
 tags: ["trip", "uk", "wreck-diving", "plymouth"]
 ---
@@ -15,11 +15,11 @@ Saturday greeted us with wall-to-wall sunshine and temperatures more suited to t
 
 After surfacing we were welcomed back onboard with refreshments of tea, coffee, hot chocolate and hot pasties before making the short journey to our second site, the James Eagan Layne. Torpedoed in 1945 whilst carrying war supplies, the wreck remains one of the South Coast's best dives. This was another excellent dive, with plenty to explore both around and inside the wreck itself. Swimming through parts of the structure added a real sense of adventure and there was no shortage of marine life, including a sizeable conger eel making an appearance.
 
-![Pasties on the boat](https://midhertsdivers.com/storage/images/articles/plymouth-2026/pasty4.jpeg)
+![Pasties on the boat](https://res.cloudinary.com/h2zix6yq/image/upload/v1785484711/mhd/articles/plymouth-2026/pasty4.jpg)
 
-![Dive prep](https://midhertsdivers.com/storage/images/articles/plymouth-2026/pasty3.jpeg)
+![Dive prep](https://res.cloudinary.com/h2zix6yq/image/upload/v1785484711/mhd/articles/plymouth-2026/pasty3.jpg)
 
-![On the boat](https://midhertsdivers.com/storage/images/articles/plymouth-2026/pasty2.jpeg)
+![On the boat](https://res.cloudinary.com/h2zix6yq/image/upload/v1785484708/mhd/articles/plymouth-2026/pasty2.jpg)
 
 The day was rounded off perfectly with an evening meal at The Ship Inn, followed by watching England secure a 2–0 win, which seemed to keep everyone in good spirits.
 
@@ -27,9 +27,9 @@ Day two started a little earlier and with slightly greyer skies, although condit
 
 The Persier was packed with life. Crayfish seemed to be everywhere you looked and there was also a very impressive lobster tucked away amongst the wreckage, along with more conger eels keeping a watchful eye on passing divers. By this point the wetsuit divers were definitely starting to feel the cold after two days of diving and some sensible decisions were made to remain onboard with a hot drink rather than head back in for another chilly dive.
 
-![Tea time](https://midhertsdivers.com/storage/images/articles/plymouth-2026/teas.jpeg)
+![Tea time](https://res.cloudinary.com/h2zix6yq/image/upload/v1785484712/mhd/articles/plymouth-2026/teas.jpg)
 
-![Group photo](https://midhertsdivers.com/storage/images/articles/plymouth-2026/group.jpeg)
+![Group photo](https://res.cloudinary.com/h2zix6yq/image/upload/v1785484707/mhd/articles/plymouth-2026/group.jpg)
 
 The final dive of the weekend was a drift dive, providing a nice relaxed way to finish off a great couple of days in the water.
 

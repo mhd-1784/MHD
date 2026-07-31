@@ -1,6 +1,6 @@
 ---
 title: "Hyperbaric Chamber Visit"
 date: 2024-02-24
-image: "https://midhertsdivers.com/storage/images/articles/drydive/gopr0016.JPG"
+image: "https://res.cloudinary.com/h2zix6yq/image/upload/v1785484603/mhd/articles/drydive/gopr0016.jpg"
 caption: "Nine Mid Herts members experienced a dry dive to 40m at the London Hyperbaric Chamber. Fun and informative!"
 ---

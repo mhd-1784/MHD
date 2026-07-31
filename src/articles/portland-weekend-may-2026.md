@@ -2,7 +2,7 @@
 title: "Portland Weekend May 2026"
 date: 2026-05-14
 author: "Howard Smith"
-image: "https://midhertsdivers.com/storage/images/articles/2026-05-15-portland/pxl_20260516_064041612s.jpg"
+image: "https://res.cloudinary.com/h2zix6yq/image/upload/v1785484583/mhd/articles/2026-05-15-portland/pxl_20260516_064041612s.jpg"
 excerpt: "Mid May saw the first 2026 Mid Herts trip to Portland. Saturday started inauspiciously with one unfortunate diver losing their car key in Portland Harbour whilst loading the boat!"
 tags: ["trip", "portland", "uk-diving"]
 ---
@@ -21,6 +21,6 @@ Chris worked overtime doing good deeds on the Sunday, retrieving a lost weight p
 
 On both days, several divers had severe problems with seasickness and unfortunately had to skip dives. However, above the water we enjoyed a couple of most enjoyable evenings in Weymouth which hopefully helped to soften the blow! Many thanks to Mark for organising.
 
-![Portland diving](https://midhertsdivers.com/storage/images/articles/2026-05-15-portland/pxl_20260516_065148703.jpg)
+![Portland diving](https://res.cloudinary.com/h2zix6yq/image/upload/v1785484584/mhd/articles/2026-05-15-portland/pxl_20260516_065148703.jpg)
 
-![Portland evening](https://midhertsdivers.com/storage/images/articles/2026-05-15-portland/pxl_20260516_185238855s.jpg)
+![Portland evening](https://res.cloudinary.com/h2zix6yq/image/upload/v1785484586/mhd/articles/2026-05-15-portland/pxl_20260516_185238855s.jpg)

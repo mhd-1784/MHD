@@ -2,7 +2,7 @@
 title: "SeaSearch Visit - March 2024"
 date: 2024-03-27
 author: "Mid Herts Divers"
-image: "https://midhertsdivers.com/storage/images/articles/20240317_161255_resized-1715422092.jpg"
+image: "https://res.cloudinary.com/h2zix6yq/image/upload/v1785484541/mhd/articles/20240317_161255_resized-1715422092.jpg"
 excerpt: "On 26/27 March Anthony, Clive and I headed down to Truro to take part in a Seasearch Course. SeaSearch is an initiative led by the Marine Conservation Society which trains recreational divers to do citizen science."
 tags: ["training", "seasearch", "marine-conservation"]
 ---
@@ -11,9 +11,9 @@ On 26/27 March Anthony, Clive and I headed down to Truro to take part in a Sease
 
 The course consists of a day of classroom training followed by a couple of open water dives the next day. The course fee includes the excellent Seasearch handbook ('The Diver's Guide to Marine Life of Britain and Ireland') which unlike most such guides contains helpful tips on identifying features and advice on whether a particular critter can be reliably identified by eye, using a photo, or whether identification to genus-level only is the best you can do without a lab.
 
-![Seasearch training](https://midhertsdivers.com/storage/images/articles/20240317_161255_resized-1715422092.jpg)
+![Seasearch training](https://res.cloudinary.com/h2zix6yq/image/upload/v1785484541/mhd/articles/20240317_161255_resized-1715422092.jpg)
 
-![Marine guide](https://midhertsdivers.com/storage/images/articles/img_3739.JPG)
+![Marine guide](https://res.cloudinary.com/h2zix6yq/image/upload/v1785484669/mhd/articles/img_3739.jpg)
 
 The course was high quality, fun and quite illuminating. It's not possible to teach the whole of UK marine biology in one day but it succeeded in filling in a lot of gaps of what a recreational diver is likely to know already. It also covered in detail how to survey a site and fill in the observer form to the level that Seasearch need.
 

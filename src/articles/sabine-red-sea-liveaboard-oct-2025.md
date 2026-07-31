@@ -2,7 +2,7 @@
 title: "Red Sea Liveaboard Oct 2025 (Sabine)"
 date: 2025-10-27
 author: "Sabine Testar"
-image: "https://midhertsdivers.com/storage/images/articles/2025-10-27-red-sea/sabine-01.jpg"
+image: "https://res.cloudinary.com/h2zix6yq/image/upload/v1785484558/mhd/articles/2025-10-27-red-sea/sabine-01.jpg"
 excerpt: "A scuba diving liveaboard is more than just a boat. It's a floating hotel, dive base, and adventure hub all in one. Designed for divers, these vessels allow you to explore remote, pristine underwater sites far beyond the reach of day boats."
 tags: ["trip", "overseas", "red-sea", "liveaboard", "egypt"]
 ---
@@ -29,19 +29,19 @@ I recently joined the Ghazala Adventure Wreck and Reef Tour for my first-ever li
 
 I first completed my PADI Open Water certification almost forty years ago and have enjoyed occasional dives across Europe and the Far East. More recently, I joined BSAC and took the Advanced Ocean Diver online course. After a few pool sessions with the club in Hatfield pool David and Mark took me to Stoney Cove, where I completed my first ever cold-water dives. Interesting and an experience I am unlikely to repeat in a wetsuit in October.
 
-![Sabine diving](https://midhertsdivers.com/storage/images/articles/2025-10-27-red-sea/sabine-01.jpg)
+![Sabine diving](https://res.cloudinary.com/h2zix6yq/image/upload/v1785484558/mhd/articles/2025-10-27-red-sea/sabine-01.jpg)
 
-![Red Sea scene](https://midhertsdivers.com/storage/images/articles/2025-10-27-red-sea/sabine-02.jpg)
+![Red Sea scene](https://res.cloudinary.com/h2zix6yq/image/upload/v1785484559/mhd/articles/2025-10-27-red-sea/sabine-02.jpg)
 
 ## Life on Board the Ghazala Adventure
 
 Over the week, I completed 20 dives, including magical night dives. The boat was luxurious, with every comfort imaginable. Spacious cabins, stunning views, and a crew who somehow managed to prepare beautifully presented, restaurant-quality meals every day. Each dive was a new adventure: exploring haunting wrecks, drifting over colourful coral reefs, and discovering the incredible marine life of the Red Sea. The dive guides were exceptional. Knowledgeable, supportive, and always ensuring every dive was safe, well-briefed, and unforgettable.
 
-![Underwater coral](https://midhertsdivers.com/storage/images/articles/2025-10-27-red-sea/sabine-03.jpg)
+![Underwater coral](https://res.cloudinary.com/h2zix6yq/image/upload/v1785484561/mhd/articles/2025-10-27-red-sea/sabine-03.jpg)
 
-![Marine life](https://midhertsdivers.com/storage/images/articles/2025-10-27-red-sea/sabine-04.jpg)
+![Marine life](https://res.cloudinary.com/h2zix6yq/image/upload/v1785484562/mhd/articles/2025-10-27-red-sea/sabine-04.jpg)
 
-![Wreck exploration](https://midhertsdivers.com/storage/images/articles/2025-10-27-red-sea/sabine-05.jpg)
+![Wreck exploration](https://res.cloudinary.com/h2zix6yq/image/upload/v1785484563/mhd/articles/2025-10-27-red-sea/sabine-05.jpg)
 
 ## Beyond the Diving
 
@@ -49,6 +49,6 @@ What made the trip truly special were the people. Sharing meals, stories, and la
 
 A heartfelt thank you to Simon and the Mid Herts Divers for organising such a fantastic trip and for welcoming me so warmly into the club. I've learned so much, made new friends, and rediscovered my passion for diving. I can't wait for the next liveaboard adventure, because once you've experienced life at sea, you are hooked!
 
-![Sunset](https://midhertsdivers.com/storage/images/articles/2025-10-27-red-sea/sabine-07.jpg)
+![Sunset](https://res.cloudinary.com/h2zix6yq/image/upload/v1785484564/mhd/articles/2025-10-27-red-sea/sabine-07.jpg)
 
-![Group photo](https://midhertsdivers.com/storage/images/articles/2025-10-27-red-sea/sabine-09.jpg)
+![Group photo](https://res.cloudinary.com/h2zix6yq/image/upload/v1785484565/mhd/articles/2025-10-27-red-sea/sabine-09.jpg)

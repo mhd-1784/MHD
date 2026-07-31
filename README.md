@@ -18,6 +18,7 @@ The following services are registered under the club email **website@midhertsdiv
 
 - **GitHub** — username `mhd-1784`, hosts the source code repository
 - **Netlify** — logged in via the GitHub account above, hosts the live site, handles forms, identity, and deploys
+- **Cloudinary** — logged in via GitLab, free image CDN for article and gallery images
 
 This email is a shared group so access isn't tied to any single committee member. Add/remove members from the Google Group to manage who receives account notifications.
 
@@ -78,27 +79,28 @@ The scheduled function (`refresh-token`) runs weekly to keep the token alive.
 
 ```
 MHD/
-├── index.html              # Homepage
-├── contact.html            # Contact form page
-├── try-dive.html           # Try dive booking page
-├── styles.css              # All styling
-├── script.js               # JS: mobile menu, Instagram loader, animations
-├── netlify.toml            # Netlify config (functions, redirects, headers)
-├── admin/
-│   ├── index.html          # Decap CMS admin panel
-│   └── config.yml          # CMS configuration
-├── netlify/
-│   └── functions/
-│       ├── instagram.js    # Fetches Instagram posts
-│       └── refresh-token.js # Refreshes Instagram token weekly
-├── articles/               # Markdown articles (managed by CMS)
-│   ├── index.json          # Article listing for homepage
-│   └── *.md               # Individual articles
-├── content/                # Static page content
-│   ├── about.md
-│   └── privacy.md
-└── images/
-    └── uploads/            # CMS-uploaded images go here
+├── src/
+│   ├── index.njk           # Homepage
+│   ├── about.njk           # About page
+│   ├── articles.njk        # Articles listing page
+│   ├── calendar.njk        # Calendar/events page
+│   ├── contact.njk         # Contact form page
+│   ├── gallery.njk         # Gallery page
+│   ├── join.njk            # Join page
+│   ├── try-dive.njk        # Try dive booking page
+│   ├── styles.css          # All styling
+│   ├── script.js           # JS: mobile menu, gallery grid, lightbox, animations
+│   ├── _includes/          # Nunjucks layout templates
+│   ├── _data/              # Global data files
+│   ├── admin/              # Decap CMS admin panel + config
+│   ├── articles/           # Markdown articles (managed by CMS)
+│   ├── events/             # Markdown events/trips (managed by CMS)
+│   ├── gallery-images/     # Markdown gallery items (managed by CMS)
+│   ├── images/             # Static images
+│   └── netlify/functions/  # Serverless functions (Instagram, token refresh)
+├── .eleventy.js            # Eleventy configuration
+├── netlify.toml            # Netlify config (build, redirects, headers)
+└── package.json            # Dependencies
 ```
 
 ## Writing Articles
@@ -122,20 +124,19 @@ Note: After publishing, Netlify automatically rebuilds the site. The new article
 
 ## Next Steps
 
-- [ ] **Set up Netlify Identity + Git Gateway** — enables the CMS at `/admin/` for article writers
-- [ ] **Set up form email notifications** — so contact/try-dive submissions email hello@midhertsdivers.com
-- [ ] **Set up Cloudinary** — free image CDN for article images (replace hotlinked images from old site)
-- [ ] **Configure Decap CMS with Cloudinary** — so writers can upload images directly in the editor
-- [ ] **Migrate images from old site** — before switching off the old site, move referenced images to Cloudinary
-- [ ] **Point custom domain** — set midhertsdivers.com to the new Netlify site
-- [ ] **Import remaining 2025 articles** — a few more may be needed from the old site
-- [ ] **Add favicon and Open Graph meta tags** — for nice browser tab icon and social media previews
+- [ ] **Set up image CDN** — move all images currently hotlinked from old site to a CDN (e.g. Cloudinary, Netlify Large Media, or similar)
+- [ ] **Configure Decap CMS with CDN** — so writers can upload images directly in the editor to the CDN
+- [ ] **Point custom domain** — set midhertsdivers.com to the new Netlify site (coordinate with current host for DNS change)
 - [ ] **Set up Instagram gallery** (optional) — connect Instagram API when ready to replace static gallery
-- [ ] **Set up branch protection** — so collaborators push to `draft` branch, merge to `main` for deploys
 
-## Future Improvements
+## Completed
 
-- Add Eleventy or Hugo for automatic article page generation from markdown
-- Add a calendar/events page
-- Add member-only content behind Identity login
-- Add search functionality
+- [x] Eleventy static site generator with automatic article page generation from markdown
+- [x] Set up Netlify Identity + Git Gateway for CMS access
+- [x] Set up form email notifications for contact/try-dive submissions
+- [x] Favicon and Open Graph meta tags for browser tab icon and social sharing previews
+- [x] Calendar/events page (manageable via CMS)
+- [x] Migrated articles from old site (Maldives, Scapa Flow, Dunoon, Isle of Man, Lanzarote, Pembrokeshire, Littlehampton, Hyperbaric Chamber, SeaSearch, Madeira, Philippines, Farnes, Red Sea, Cyprus, Fuerteventura, Portland, Plymouth, and more)
+- [x] Gallery page with images from trips
+- [x] Article image gallery grid (consecutive images display in a responsive grid with lightbox)
+- [x] Updated colour scheme and design

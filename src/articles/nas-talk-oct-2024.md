@@ -2,7 +2,7 @@
 title: "Club Social Special - Nautical Archaeological Society Talk"
 date: 2024-10-30
 author: "Mid Herts Divers"
-image: "https://midhertsdivers.com/storage/images/articles/img_20241030_210232109.jpg"
+image: "https://res.cloudinary.com/h2zix6yq/image/upload/v1785484667/mhd/articles/img_20241030_210232109.jpg"
 excerpt: "For our October Monthly Club Social, we were delighted to welcome the Nautical Archaeological Society (NAS) to the Welwyn Sports & Social Club for a talk on the workings of the NAS."
 tags: ["social", "talk", "archaeology"]
 ---
@@ -11,11 +11,11 @@ For our October Monthly Club Social, we were delighted to welcome the Nautical A
 
 Mark Beattie-Edwards, CEO and Sara Hasan, long-time member of NAS and Secretary of the NAS Diving Club drove all the way from Portsmouth for the evening to present.
 
-![NAS Talk](https://midhertsdivers.com/storage/images/articles/img_20241030_210232109.jpg)
+![NAS Talk](https://res.cloudinary.com/h2zix6yq/image/upload/v1785484667/mhd/articles/img_20241030_210232109.jpg)
 
-![Presenters](https://midhertsdivers.com/storage/images/articles/img_20241030_210302641.jpg)
+![Presenters](https://res.cloudinary.com/h2zix6yq/image/upload/v1785484668/mhd/articles/img_20241030_210302641.jpg)
 
-![Audience](https://midhertsdivers.com/storage/images/articles/img_20241030_210448126.jpg)
+![Audience](https://res.cloudinary.com/h2zix6yq/image/upload/v1785484668/mhd/articles/img_20241030_210448126.jpg)
 
 Mark told us how the NAS operates and Sara explained how she had became involved many years ago and now was one of the few Trustees of a UK Protected Wreck.
 

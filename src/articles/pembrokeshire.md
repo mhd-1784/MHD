@@ -2,7 +2,7 @@
 title: "Pembrokeshire Trip"
 date: 2021-08-15
 author: "Mid Herts Divers"
-image: "https://midhertsdivers.com/storage/images/articles/wales-boat.jpg"
+image: "https://res.cloudinary.com/h2zix6yq/image/upload/v1785484759/mhd/articles/wales-boat.jpg"
 excerpt: "For the second year running we had to cancel the trip we had planned to go to Malta due to the ongoing COVID saga. So we played it safe and Simon put in a huge effort to secure us a week of diving closer to home."
 tags: ["trip", "uk-diving", "pembrokeshire", "wales", "wreck-diving"]
 ---
@@ -11,11 +11,11 @@ For the second year running we had to cancel the trip we had planned to go to Ma
 
 So we played it safe and Simon put in a huge effort to secure us a week of diving closer to home. After looking at various options around the UK, we were lucky enough to secure a boat and accommodation near Milford Haven.
 
-![On the boat](https://midhertsdivers.com/storage/images/articles/wales-boat.jpg)
+![On the boat](https://res.cloudinary.com/h2zix6yq/image/upload/v1785484759/mhd/articles/wales-boat.jpg)
 
-![Tea break](https://midhertsdivers.com/storage/images/articles/wales-tea.jpg)
+![Tea break](https://res.cloudinary.com/h2zix6yq/image/upload/v1785484760/mhd/articles/wales-tea.jpg)
 
-![Pembrokeshire diving](https://midhertsdivers.com/storage/images/articles/Pembrokeshire-2.jpeg)
+![Pembrokeshire diving](https://res.cloudinary.com/h2zix6yq/image/upload/v1785484588/mhd/articles/Pembrokeshire-2.jpg)
 
 There was a slight issue with the boat we had scheduled due to the guy double booking us, so we had to swap to a different boat for a few of the dives, which did mean lugging all the kit on and off the boats a few times. Apart from that, everything went really well and was a great trip.
 

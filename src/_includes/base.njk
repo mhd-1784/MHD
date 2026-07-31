@@ -4,6 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ title }} - Mid Herts Divers</title>
+    <meta name="description" content="{{ excerpt or 'Mid Herts Divers - A friendly BSAC scuba diving and snorkelling club based in Hertfordshire. We offer try dives, training, UK and overseas trips.' }}">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+    <!-- Open Graph (Facebook, WhatsApp, iMessage, etc.) -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="{{ title }} - Mid Herts Divers">
+    <meta property="og:description" content="{{ excerpt or 'Mid Herts Divers - A friendly BSAC scuba diving and snorkelling club based in Hertfordshire.' }}">
+    <meta property="og:image" content="{{ image or '/images/hero-divers.png' }}">
+    <meta property="og:url" content="https://midhertsdivers.com{{ page.url }}">
+    <meta property="og:site_name" content="Mid Herts Divers">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="{{ title }} - Mid Herts Divers">
+    <meta name="twitter:description" content="{{ excerpt or 'Mid Herts Divers - A friendly BSAC scuba diving and snorkelling club based in Hertfordshire.' }}">
+    <meta name="twitter:image" content="{{ image or '/images/hero-divers.png' }}">
+
     <link rel="stylesheet" href="/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

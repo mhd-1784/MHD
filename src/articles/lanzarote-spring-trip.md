@@ -2,18 +2,18 @@
 title: "Lanzarote Spring Trip"
 date: 2022-03-28
 author: "Mid Herts Divers"
-image: "https://midhertsdivers.com/storage/images/articles/lanzarote/Lanz1.jpeg"
+image: "https://res.cloudinary.com/h2zix6yq/image/upload/v1785484678/mhd/articles/lanzarote/Lanz1.jpg"
 excerpt: "The end of March saw Mid Herts Divers setting off for a few days in the sun to do some warm water diving. There were 14 on the trip, including 3 non-divers."
 tags: ["trip", "overseas", "lanzarote", "training"]
 ---
 
 The end of March saw Mid Herts Divers setting off for a few days in the sun to do some warm water diving. There were 14 on the trip, including 3 non-divers. 2 completed their Ocean Diver training and 2 completed most of their Advanced Ocean Diver training, only thwarted by high winds on the last day! Four went for an extended week/10 days package holiday whilst the remainder just went for 5 days that allowed us to get six dives in at Puerto del Carmen, only a short distance from the airport. Safari Divers were great hosts arranging Ocean Diver referrals, accommodation and equipment hire.
 
-![Lanzarote diving](https://midhertsdivers.com/storage/images/articles/lanzarote/Lanz1.jpeg)
+![Lanzarote diving](https://res.cloudinary.com/h2zix6yq/image/upload/v1785484678/mhd/articles/lanzarote/Lanz1.jpg)
 
-![Underwater](https://midhertsdivers.com/storage/images/articles/lanzarote/Lanz2.jpeg)
+![Underwater](https://res.cloudinary.com/h2zix6yq/image/upload/v1785484679/mhd/articles/lanzarote/Lanz2.jpg)
 
-![Group photo](https://midhertsdivers.com/storage/images/articles/lanzarote/Lanz3.jpeg)
+![Group photo](https://res.cloudinary.com/h2zix6yq/image/upload/v1785484681/mhd/articles/lanzarote/Lanz3.jpg)
 
 As well as the mainly shore diving, we managed to get in a RIB dive to explore some of the old harbour wrecks. Depths encountered were from a shore wade-in and down to 30m. Visibility was good, water temperature at 19 degrees compared to 6 degrees back in Arlesey and Stoney Cove. Angel sharks, rays, cuttle fish, octopus and the rarely seen sea-horses were seen.
 

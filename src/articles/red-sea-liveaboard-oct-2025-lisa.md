@@ -2,7 +2,7 @@
 title: "Red Sea Liveaboard Oct 2025 - Lisa"
 date: 2025-10-27
 author: "Lisa"
-image: "https://midhertsdivers.com/storage/images/articles/2025-10-27-red-sea/2025-10-29-dji_20251029053846_0164_d.jpg"
+image: "https://res.cloudinary.com/h2zix6yq/image/upload/v1785484549/mhd/articles/2025-10-27-red-sea/2025-10-29-dji_20251029053846_0164_d.jpg"
 excerpt: "When the opportunity to go on a liveaboard trip to Egypt presented itself, I didn't hesitate. As an ocean diver I didn't have the necessary qualifications to join this trip, but I did have enough time to get liveaboard ready."
 tags: ["trip", "overseas", "red-sea", "liveaboard", "egypt"]
 ---
@@ -17,17 +17,17 @@ I had great expectations of this liveaboard trip and was keen to see what all th
 
 A few dives involved getting to the dive site by zodiac/rib. Diving off the rib was fun – first time for a negative entry - but getting back on again after a dive was difficult. Diving on a shot line was a lot easier - until you miss it and the current has a go at taking you away! I find it amusing seeing a line of divers hanging off the shot line at the safety stop going back to the boat.
 
-![Liveaboard boat](https://midhertsdivers.com/storage/images/articles/2025-10-27-red-sea/2025-10-29-dji_20251029053846_0164_d.jpg)
+![Liveaboard boat](https://res.cloudinary.com/h2zix6yq/image/upload/v1785484549/mhd/articles/2025-10-27-red-sea/2025-10-29-dji_20251029053846_0164_d.jpg)
 
-![Underwater scene](https://midhertsdivers.com/storage/images/articles/2025-10-27-red-sea/2025-10-29-pxl_20251029_033043629.mp.jpg)
+![Underwater scene](https://res.cloudinary.com/h2zix6yq/image/upload/v1785484551/mhd/articles/2025-10-27-red-sea/2025-10-29-pxl_20251029_033043629_mp.jpg)
 
-![Reef diving](https://midhertsdivers.com/storage/images/articles/2025-10-27-red-sea/2025-10-30-dji_20251030045707_0221_d.jpg)
+![Reef diving](https://res.cloudinary.com/h2zix6yq/image/upload/v1785484552/mhd/articles/2025-10-27-red-sea/2025-10-30-dji_20251030045707_0221_d.jpg)
 
-![Wreck diving](https://midhertsdivers.com/storage/images/articles/2025-10-27-red-sea/2025-10-31-dji_20251031094001_0016_d.jpg)
+![Wreck diving](https://res.cloudinary.com/h2zix6yq/image/upload/v1785484554/mhd/articles/2025-10-27-red-sea/2025-10-31-dji_20251031094001_0016_d.jpg)
 
-![Group on boat](https://midhertsdivers.com/storage/images/articles/2025-10-27-red-sea/2025-11-01-dji_20251101101304_0202_d.jpg)
+![Group on boat](https://res.cloudinary.com/h2zix6yq/image/upload/v1785484556/mhd/articles/2025-10-27-red-sea/2025-11-01-dji_20251101101304_0202_d.jpg)
 
-![Sunset on the Red Sea](https://midhertsdivers.com/storage/images/articles/2025-10-27-red-sea/2025-11-01-dji_20251101142027_0270_d.jpg)
+![Sunset on the Red Sea](https://res.cloudinary.com/h2zix6yq/image/upload/v1785484557/mhd/articles/2025-10-27-red-sea/2025-11-01-dji_20251101142027_0270_d.jpg)
 
 The Ghazala Adventure liveaboard was first class. The accommodation - main lounge and dining area were comfortable and spacious, and the cabins were also roomy and bright. It didn't feel cramped at all. The dive platform was excellent with lots of room for divers to get their kit on and get ready for diving. The crew were on hand to help us into and out of our dive gear before and after each dive. They really couldn't do enough to help us.
 

@@ -2,9 +2,15 @@ backend:
   name: git-gateway
   branch: main
 
-# Where uploaded images go
-media_folder: "src/images/uploads"
-public_folder: "/images/uploads"
+# Image storage via Cloudinary
+media_library:
+  name: cloudinary
+  config:
+    cloud_name: h2zix6yq
+    api_key: "112573664623964"
+    default_transformations:
+      - - fetch_format: auto
+          quality: auto
 
 # Content collections
 collections:
