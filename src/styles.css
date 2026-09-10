@@ -481,6 +481,8 @@ img {
 
 .feature-card {
     position: relative;
+    display: flex;
+    flex-direction: column;
     overflow: hidden;
     background: var(--surface);
     border: 1px solid var(--border);
@@ -520,14 +522,20 @@ img {
     transform: scale(1.04);
 }
 
-.feature-icon {
+.feature-heading {
     position: relative;
+    align-items: center;
+    display: flex;
+    margin: -32px 32px 20px;
+}
+
+.feature-icon {
     display: inline-flex;
+    flex: 0 0 auto;
     align-items: center;
     justify-content: center;
     width: 64px;
     height: 64px;
-    margin: -32px 32px 20px;
     border: 1px solid rgba(var(--primary-rgb), 0.16);
     border-radius: 8px;
     background: var(--surface);
@@ -540,15 +548,6 @@ img {
     height: 32px;
 }
 
-.feature-eyebrow {
-    margin: 0 32px 8px;
-    color: var(--primary);
-    font-size: 0.8rem;
-    font-weight: 800;
-    letter-spacing: 0;
-    text-transform: uppercase;
-}
-
 .feature-card h3 {
     font-size: 1.55rem;
     margin-bottom: 12px;
@@ -556,7 +555,7 @@ img {
     color: var(--dark);
 }
 
-.feature-card p {
+.feature-card > p {
     color: var(--text-light);
     margin-bottom: 22px;
     padding: 0 32px;
@@ -566,7 +565,9 @@ img {
 .feature-link {
     display: inline-flex;
     align-items: center;
+    align-self: flex-start;
     margin: 0 32px;
+    margin-top: auto;
     padding: 11px 18px;
     border-radius: 8px;
     background: var(--primary);
@@ -1328,13 +1329,12 @@ img {
     }
 
     .feature-card h3,
-    .feature-card p,
-    .feature-eyebrow {
+    .feature-card > p {
         padding-left: 24px;
         padding-right: 24px;
     }
 
-    .feature-icon,
+    .feature-heading,
     .feature-link {
         margin-left: 24px;
         margin-right: 24px;
