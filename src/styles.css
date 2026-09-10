@@ -1299,6 +1299,33 @@ img {
     transform: translateY(-1px);
 }
 
+.contact-social-links {
+    margin-top: 12px;
+}
+
+.contact-social-link {
+    gap: 10px;
+    width: auto;
+    min-width: 136px;
+    padding: 0 16px;
+    border-color: var(--border);
+    background: var(--surface);
+    color: var(--primary);
+    font-size: 0.95rem;
+    font-weight: 600;
+}
+
+.contact-social-link svg {
+    flex: 0 0 auto;
+}
+
+.contact-social-link:hover {
+    background: var(--surface-muted);
+    border-color: rgba(var(--primary-rgb), 0.28);
+    color: var(--primary-dark);
+    box-shadow: var(--shadow);
+}
+
 .footer-bottom {
     display: flex;
     align-items: center;
