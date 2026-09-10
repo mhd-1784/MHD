@@ -81,7 +81,6 @@ title: Scuba Diving and Snorkelling Club
     <div class="container">
         <div class="section-header">
             <h2>Recent Articles</h2>
-            <a href="/articles/" class="see-all">See all &raquo;</a>
         </div>
         <div class="articles-grid">
             {% for article in collections.articles %}
@@ -107,6 +106,9 @@ title: Scuba Diving and Snorkelling Club
             </article>
             {% endif %}
             {% endfor %}
+        </div>
+        <div class="section-action">
+            <a href="/articles/" class="see-all">View all articles</a>
         </div>
     </div>
 </section>
