@@ -791,6 +791,17 @@ img {
     line-height: 1.6;
 }
 
+.membership .btn-primary {
+    background: var(--surface);
+    color: var(--dark);
+}
+
+.membership .btn-primary:hover {
+    background: var(--focus);
+    color: var(--dark);
+    box-shadow: 0 10px 24px rgba(var(--deep-rgb), 0.22);
+}
+
 /* === Gallery === */
 .gallery {
     padding: 80px 0;
