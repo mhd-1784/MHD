@@ -449,22 +449,58 @@ img {
 
 /* === Page Hero (for sub-pages) === */
 .page-hero {
-    background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary) 55%, var(--primary-light) 100%);
-    padding: 120px 0 60px;
+    position: relative;
+    isolation: isolate;
+    overflow: hidden;
+    background:
+        linear-gradient(135deg, var(--bg-dark) 0%, var(--primary-dark) 54%, var(--primary) 100%),
+        linear-gradient(90deg, rgba(var(--surface-rgb), 0.08) 0%, rgba(var(--surface-rgb), 0) 55%);
+    padding: 56px 0 52px;
     margin-top: 70px;
     text-align: center;
     color: var(--surface);
 }
 
+.page-hero::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    background:
+        repeating-linear-gradient(
+            112deg,
+            rgba(var(--surface-rgb), 0.08) 0,
+            rgba(var(--surface-rgb), 0.08) 1px,
+            transparent 1px,
+            transparent 54px
+        );
+    opacity: 0.32;
+}
+
+.page-hero::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    height: 6px;
+    background: linear-gradient(90deg, var(--accent), var(--primary-light), var(--primary));
+}
+
 .page-hero h1 {
-    font-size: 2.5rem;
+    font-size: 3rem;
     font-weight: 800;
-    margin-bottom: 12px;
+    max-width: 900px;
+    margin: 0 auto 14px;
 }
 
 .page-hero p {
-    font-size: 1.1rem;
-    opacity: 0.9;
+    max-width: 680px;
+    margin: 0 auto;
+    color: rgba(var(--surface-rgb), 0.84);
+    font-size: 1.14rem;
+    line-height: 1.65;
 }
 
 /* === Features === */
@@ -1297,6 +1333,10 @@ img {
         grid-template-columns: 1fr;
     }
 
+    .page-hero h1 {
+        font-size: 2.45rem;
+    }
+
     .form-layout {
         grid-template-columns: 1fr;
         gap: 40px;
@@ -1341,6 +1381,18 @@ img {
     }
 
     .hero-description {
+        font-size: 1rem;
+    }
+
+    .page-hero {
+        padding: 52px 0 44px;
+    }
+
+    .page-hero h1 {
+        font-size: 2rem;
+    }
+
+    .page-hero p {
         font-size: 1rem;
     }
 
