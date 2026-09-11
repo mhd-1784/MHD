@@ -180,6 +180,18 @@ function initAnimations() {
     });
 }
 
+// Hide past events on the calendar page
+function hidePastEvents() {
+    const now = new Date();
+    now.setHours(0, 0, 0, 0);
+    document.querySelectorAll('.event-card[data-end-date]').forEach(card => {
+        const endDate = new Date(card.getAttribute('data-end-date'));
+        if (endDate < now) {
+            card.style.display = 'none';
+        }
+    });
+}
+
 // Article gallery: wrap consecutive images into grid containers
 function initArticleGallery() {
     const articleBody = document.querySelector('.article-body');
@@ -300,6 +312,7 @@ document.addEventListener('DOMContentLoaded', () => {
     loadInstagramFeed();
     loadArticles();
     initArticleGallery();
+    hidePastEvents();
     // Delay animations to allow content to load
     setTimeout(initAnimations, 500);
 });

@@ -4,11 +4,11 @@ A simple, free-to-host website for Mid Herts Divers scuba diving club.
 
 ## Features
 
-- **Homepage** with hero, feature cards, articles, membership info, and Instagram gallery
+- **Homepage** with hero, feature cards, articles, membership info, and gallery
 - **Contact form** → emails hello@midhertsdivers.com (via Netlify Forms)
 - **Try Dive booking form** → emails hello@midhertsdivers.com (via Netlify Forms)
-- **Instagram gallery** → pulls latest posts from @midhertsdivers
 - **Article CMS** → authorised members can write articles via /admin/
+- **Gallery CMS** → authorised members can upload images via /admin/
 - **Fully responsive** → works on mobile, tablet, and desktop
 - **Free hosting** on Netlify
 
@@ -19,8 +19,49 @@ The following services are registered under the club email **website@midhertsdiv
 - **GitHub** — username `mhd-1784`, hosts the source code repository
 - **Netlify** — logged in via the GitHub account above, hosts the live site, handles forms, identity, and deploys
 - **Cloudinary** — logged in via GitLab, free image CDN for article and gallery images
+- **Cloudflare** — logged in via GitHub, manages the domain and DNS for midhertsdivers.com (Account ID: `32007a9ecb927d6a20f07590cc96c576`)
 
 This email is a shared group so access isn't tied to any single committee member. Add/remove members from the Google Group to manage who receives account notifications.
+
+## Local Development
+
+The site is built with [Eleventy](https://www.11ty.dev/) (a static site generator). To run it locally:
+
+```bash
+# Clone the repo
+git clone https://github.com/mhd-1784/MHD.git
+cd MHD
+
+# Install dependencies
+npm install
+
+# Start the dev server (with live reload)
+npm run dev
+```
+
+The site runs at `http://localhost:8080/`. Any edits to files in `src/` will auto-rebuild and refresh the browser.
+
+Other commands:
+- `npm run build` — build the site into `_site/` (what Netlify runs on deploy)
+- `npm run clean` — delete the `_site/` build output
+
+### Contributing
+
+Every push to the `main` branch triggers an automatic Netlify deploy to the live site. To avoid pushing unfinished work live, use a branch and pull request:
+
+```bash
+# Create a branch for your work
+git checkout -b my-change
+
+# ... make edits, then commit ...
+git add .
+git commit -m "Describe your change"
+git push -u origin my-change
+```
+
+Then open a Pull Request on GitHub. Once reviewed and merged into `main`, Netlify deploys it automatically.
+
+Content (articles, events, gallery) is normally added via the CMS at `/admin/` rather than by editing markdown directly — but both work.
 
 ## Deployment to Netlify
 
@@ -30,7 +71,7 @@ This email is a shared group so access isn't tied to any single committee member
 git init
 git add .
 git commit -m "Initial commit"
-git remote add origin https://github.com/YOUR_USERNAME/midhertsdivers-website.git
+git remote add origin https://github.com/mhd-1784/MHD
 git push -u origin main
 ```
 
@@ -122,11 +163,38 @@ Note: After publishing, Netlify automatically rebuilds the site. The new article
 - Identity: Free (5 invited users)
 - SSL: Free
 
+## Branch Workflow
+
+To avoid breaking the live site, use feature branches for changes:
+
+```bash
+# Create a new branch for your changes
+git checkout -b my-changes
+
+# Make edits, then commit
+git add -A
+git commit -m "Description of changes"
+
+# Push the branch (won't trigger a production deploy)
+git push -u origin my-changes
+
+# When ready to go live, merge to main
+git checkout main
+git pull
+git merge my-changes
+git push
+```
+
+Only pushes to `main` trigger a production deploy on Netlify. Feature branches are free to push without using credits.
+
+To discard local changes and reset a file to the last committed version:
+```bash
+git checkout -- path/to/file
+```
+
 ## Next Steps
 
-- [ ] **Set up image CDN** — move all images currently hotlinked from old site to a CDN (e.g. Cloudinary, Netlify Large Media, or similar)
-- [ ] **Configure Decap CMS with CDN** — so writers can upload images directly in the editor to the CDN
-- [ ] **Point custom domain** — set midhertsdivers.com to the new Netlify site (coordinate with current host for DNS change)
+- [ ] **Point custom domain** — domain/DNS being moved to a new MHD Cloudflare account (via GitHub login); current owner transfers midhertsdivers.com across, then point DNS at Netlify (keep Cloudflare as DNS, "DNS only"/grey cloud on Netlify records so Netlify handles SSL)
 - [ ] **Set up Instagram gallery** (optional) — connect Instagram API when ready to replace static gallery
 
 ## Completed
@@ -135,8 +203,10 @@ Note: After publishing, Netlify automatically rebuilds the site. The new article
 - [x] Set up Netlify Identity + Git Gateway for CMS access
 - [x] Set up form email notifications for contact/try-dive submissions
 - [x] Favicon and Open Graph meta tags for browser tab icon and social sharing previews
-- [x] Calendar/events page (manageable via CMS)
+- [x] Calendar/events page (manageable via CMS, auto-hides past events)
 - [x] Migrated articles from old site (Maldives, Scapa Flow, Dunoon, Isle of Man, Lanzarote, Pembrokeshire, Littlehampton, Hyperbaric Chamber, SeaSearch, Madeira, Philippines, Farnes, Red Sea, Cyprus, Fuerteventura, Portland, Plymouth, and more)
 - [x] Gallery page with images from trips
 - [x] Article image gallery grid (consecutive images display in a responsive grid with lightbox)
 - [x] Updated colour scheme and design
+- [x] Set up Cloudinary CDN — all images migrated from old site, CMS configured for future uploads
+- [x] Join page improvements — skip-to links for new/qualified divers, separated DD buttons

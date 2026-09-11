@@ -30,7 +30,7 @@ permalink: /calendar/
             
             <div class="events-list">
                 {% for event in collections.events %}
-                <div class="event-card">
+                <div class="event-card" data-end-date="{{ event.data.endDate or event.data.startDate }}">
                     <div class="event-date">
                         <span class="event-day">{{ event.data.startDate | dateFormat }}</span>
                         {% if event.data.endDate and event.data.endDate != event.data.startDate %}
