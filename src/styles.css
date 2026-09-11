@@ -315,7 +315,7 @@ img {
     content: '';
     position: absolute;
     inset: 0;
-    background: url('/images/hero-divers.png') no-repeat center center;
+    background: url('/images/Lanz1-hero.jpg') no-repeat center center;
     background-size: cover;
     opacity: 0.78;
     transform: scale(1.02);
