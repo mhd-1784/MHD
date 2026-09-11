@@ -18,9 +18,15 @@ module.exports = function(eleventyConfig) {
             .sort((a, b) => b.date - a.date);
     });
 
-    // Create a collection of events sorted by start date (soonest first)
+    // Create a collection of events sorted by start date (soonest first), excluding past events
     eleventyConfig.addCollection("events", function(collectionApi) {
+        const now = new Date();
+        now.setHours(0, 0, 0, 0);
         return collectionApi.getFilteredByGlob("src/events/*.md")
+            .filter(event => {
+                const endDate = new Date(event.data.endDate || event.data.startDate);
+                return endDate >= now;
+            })
             .sort((a, b) => new Date(a.data.startDate) - new Date(b.data.startDate));
     });
 
