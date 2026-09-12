@@ -7,29 +7,57 @@ title: Scuba Diving and Snorkelling Club
 <section class="hero" id="home">
     <div class="hero-overlay"></div>
     <div class="hero-content container">
+        <p class="hero-kicker">BSAC branch 1784 in Hertfordshire</p>
         <h1>Mid Herts Divers</h1>
-        <p class="hero-subtitle">Scuba Diving and Snorkelling Club</p>
-        <p class="hero-description">We are British Sub Aqua Club branch 1784, based at the Hatfield Swim Centre. We welcome both trainee and experienced divers and snorkellers. Come dive with us!</p>
+        <p class="hero-subtitle">Friendly scuba diving, snorkelling and training based at Hatfield Swim Centre.</p>
+        <p class="hero-description">We welcome trainee and experienced divers and snorkellers. Come dive with us!</p>
+        <div class="hero-actions">
+            <a href="/try-dive/" class="btn-primary btn-large">Book a try dive</a>
+        </div>
+        <div class="hero-highlights" aria-label="Club highlights">
+            <div>
+                <strong>33m</strong>
+                <span>training pool</span>
+            </div>
+            <div>
+                <strong>BSAC</strong>
+                <span>qualified instructors</span>
+            </div>
+            <div>
+                <strong>UK + overseas</strong>
+                <span>club diving trips</span>
+            </div>
+        </div>
     </div>
 </section>
 
 <!-- Feature Cards -->
 <section class="features container">
     <div class="feature-card">
-        <div class="feature-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/></svg>
+        <div class="feature-media">
+            <img src="/images/cyprus.jpg" alt="Diver training in open water" loading="lazy">
+        </div>
+        <div class="feature-heading">
+            <div class="feature-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/></svg>
+            </div>
         </div>
         <h3>New to Diving?</h3>
         <p>If you are new to scuba diving and want to learn you are in the right place! Learning to scuba dive can be a life-changing experience, bringing a whole host of exciting underwater opportunities your way.</p>
-        <a href="/new-diver/" class="feature-link">Learn to dive &raquo;</a>
+        <a href="/new-diver/" class="feature-link">Learn to dive</a>
     </div>
     <div class="feature-card">
-        <div class="feature-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+        <div class="feature-media">
+            <img src="/images/already-a-diver.jpeg" alt="Qualified diver underwater" loading="lazy">
+        </div>
+        <div class="feature-heading">
+            <div class="feature-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+            </div>
         </div>
         <h3>Already a Diver?</h3>
         <p>Are you a qualified scuba diver with PADI, SSI, RAID, GUE or another agency? Great! Continue the adventure… join great people in your area on some memory-making scuba diving.</p>
-        <a href="/existing-divers/" class="feature-link">Get back in the water &raquo;</a>
+        <a href="/existing-divers/" class="feature-link">Get back in the water</a>
     </div>
 </section>
 
@@ -52,7 +80,6 @@ title: Scuba Diving and Snorkelling Club
     <div class="container">
         <div class="section-header">
             <h2>Recent Articles</h2>
-            <a href="/articles/" class="see-all">See all &raquo;</a>
         </div>
         <div class="articles-grid">
             {% for article in collections.articles %}
@@ -79,6 +106,9 @@ title: Scuba Diving and Snorkelling Club
             {% endif %}
             {% endfor %}
         </div>
+        <div class="section-action">
+            <a href="/articles/" class="see-all">View all articles</a>
+        </div>
     </div>
 </section>
 
@@ -86,33 +116,15 @@ title: Scuba Diving and Snorkelling Club
 <section class="membership" id="membership">
     <div class="container">
         <h2>What's included in the Membership?</h2>
-        <div class="benefits-grid">
-            <div class="benefit-item">
-                <div class="benefit-icon">🏊</div>
-                <p>Access to a 33m swimming pool with depth to 3.8m</p>
-            </div>
-            <div class="benefit-item">
-                <div class="benefit-icon">🎓</div>
-                <p>Training with Nationally Qualified Instructors to an Internationally recognised standard</p>
-            </div>
-            <div class="benefit-item">
-                <div class="benefit-icon">✈️</div>
-                <p>Club trips to UK and Overseas destinations</p>
-            </div>
-            <div class="benefit-item">
-                <div class="benefit-icon">🌊</div>
-                <p>Access to local open water facility</p>
-            </div>
-            <div class="benefit-item">
-                <div class="benefit-icon">🤿</div>
-                <p>Access to club Scuba kit during training</p>
-            </div>
-            <div class="benefit-item">
-                <div class="benefit-icon">💨</div>
-                <p>Free Air Fills</p>
-            </div>
-        </div>
-        <a href="/join/" class="btn-primary btn-large">Join Now</a>
+        <ul class="benefits-list">
+            <li>Access to a 33m swimming pool with depth to 3.8m</li>
+            <li>Training with Nationally Qualified Instructors to an Internationally recognised standard</li>
+            <li>Club trips to UK and Overseas destinations</li>
+            <li>Access to local open water facility</li>
+            <li>Access to club Scuba kit during training</li>
+            <li>Free Air Fills</li>
+        </ul>
+        <a href="/join/" class="btn-primary btn-large">Join the club</a>
     </div>
 </section>
 
@@ -121,7 +133,6 @@ title: Scuba Diving and Snorkelling Club
     <div class="container">
         <div class="section-header">
             <h2>Latest Images</h2>
-            <a href="/gallery/" class="see-all">See all &raquo;</a>
         </div>
         <div class="gallery-grid">
             {% for item in collections.galleryImages %}
@@ -132,6 +143,9 @@ title: Scuba Diving and Snorkelling Club
             </div>
             {% endif %}
             {% endfor %}
+        </div>
+        <div class="section-action">
+            <a href="/gallery/" class="see-all">View all images</a>
         </div>
     </div>
 </section>
