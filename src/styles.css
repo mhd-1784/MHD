@@ -221,6 +221,10 @@ img {
     gap: 16px;
 }
 
+.mobile-menu-actions {
+    display: none;
+}
+
 .btn-signin {
     font-weight: 600;
     color: var(--text);
@@ -1344,7 +1348,48 @@ img {
 }
 
 /* === Responsive === */
+@media (min-width: 969px) and (max-width: 1110px) {
+    .nav {
+        gap: 16px;
+    }
+
+    .logo {
+        flex-shrink: 0;
+        gap: 8px;
+        font-size: 1.1rem;
+        white-space: nowrap;
+    }
+
+    .logo-img {
+        height: 36px;
+    }
+
+    .nav-links {
+        gap: 16px;
+    }
+
+    .nav-links a {
+        font-size: 0.88rem;
+    }
+
+    .nav-actions {
+        flex-shrink: 0;
+        gap: 8px;
+    }
+
+    .nav-actions .btn-primary,
+    .nav-actions .btn-secondary {
+        padding: 8px 12px;
+        font-size: 0.85rem;
+        white-space: nowrap;
+    }
+}
+
 @media (max-width: 968px) {
+    .hero {
+        min-height: auto;
+    }
+
     .nav-links, .nav-actions {
         display: none;
     }
@@ -1364,6 +1409,43 @@ img {
         padding: 24px;
         gap: 16px;
         box-shadow: var(--shadow);
+    }
+
+    .mobile-menu-actions {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 8px;
+        padding-top: 20px;
+        border-top: 1px solid var(--border);
+    }
+
+    .nav-links .mobile-menu-primary,
+    .nav-links .mobile-menu-secondary {
+        width: 100%;
+        padding: 11px 20px;
+        text-align: center;
+        white-space: nowrap;
+    }
+
+    .nav-links .mobile-menu-primary {
+        color: var(--surface);
+    }
+
+    .nav-links .mobile-menu-primary:hover {
+        color: var(--surface);
+    }
+
+    .nav-links .mobile-menu-secondary {
+        color: var(--primary);
+    }
+
+    .nav-links .mobile-menu-secondary:hover {
+        color: var(--surface);
+    }
+
+    .mobile-menu-actions a::after {
+        display: none;
     }
 
     .features {
@@ -1412,11 +1494,11 @@ img {
     }
 
     .hero-content {
-        padding: 76px 24px 96px;
+        padding: 64px 24px 88px;
     }
 
     .hero-highlights {
-        grid-template-columns: 1fr;
+        display: none;
     }
 
     .page-hero h1 {
