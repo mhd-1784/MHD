@@ -3,6 +3,11 @@
   publish = "_site"
   functions = "src/netlify/functions"
 
+[[redirects]]
+  from = "/articles/:year/:slug"
+  to = "/articles/:slug/"
+  status = 301
+
 # Only deploy the main branch to production
 # Other branches won't trigger production deploys
 [context.production]
