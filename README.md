@@ -195,10 +195,21 @@ git checkout -- path/to/file
 ## Next Steps
 
 - [ ] **Point custom domain** — domain/DNS being moved to a new MHD Cloudflare account (via GitHub login); current owner transfers midhertsdivers.com across, then point DNS at Netlify (keep Cloudflare as DNS, "DNS only"/grey cloud on Netlify records so Netlify handles SSL). NOTE: article redirects only take effect once the domain is live — verify a couple of old URLs (e.g. `/articles/2026/plymouth-june-2026`) redirect correctly after cutover.
-- [ ] **Finalise home page card images** — `already-a-diver.jpeg` and `try-scuba.jpeg` still to be updated
-- [ ] **Calendar page polish** — light visual improvements to the top text (Regular Sessions / Year Planner)
-- [ ] **Hero H1 sizing** — decide whether to keep "Mid Herts Divers" on one line (discuss with Sergey)
 - [ ] **Set up Instagram gallery** (optional) — connect Instagram API when ready to replace static gallery
+
+## SEO Improvement Checklist
+
+# High Priority
+
+- [ ] Add self-referencing canonical tags to all indexable pages.
+- [ ] Implement homepage JSON-LD structured data (SportsClub or Organization + WebSite).
+- [ ] Validate structured data using Google’s Rich Results Test or Schema Validator.
+
+# Medium Priority
+
+- [ ] Add width and height attributes to all images to reduce Cumulative Layout Shift (CLS).
+- [ ] Implement Article schema on article pages.
+- [ ] Implement BreadcrumbList schema on internal pages.
 
 ## Completed
 
@@ -214,3 +225,6 @@ git checkout -- path/to/file
 - [x] Set up Cloudinary CDN — all images migrated from old site, CMS configured for future uploads
 - [x] Join page improvements — skip-to links for new/qualified divers, separated DD buttons
 - [x] SEO redirects — old year-based article URLs (`/articles/YYYY/slug`) 301-redirect to new slug URLs via `src/_redirects`
+- [x] **Finalise home page card images** — `already-a-diver.jpeg` and `try-scuba.jpeg` still to be updated
+- [x] **Calendar page polish** — light visual improvements to the top text (Regular Sessions / Year Planner)
+- [x] **Hero H1 sizing** — decide whether to keep "Mid Herts Divers" on one line (discuss with Sergey)
