@@ -1,0 +1,17 @@
+# Redirect old year-based article URLs to new slug-only URLs
+# Old: /articles/2026/plymouth-june-2026  ->  New: /articles/plymouth-june-2026/
+# The :splat captures the slug (and anything after the year segment).
+
+# --- Specific redirects (where the new slug differs from the old slug) ---
+# These MUST come before the wildcard rules below so they take precedence.
+/articles/2024/littlehampton-day-trip-august-28th-2024   /articles/littlehampton-day-trip-august-2024/   301
+
+# --- Wildcard: strip the year segment for all other articles ---
+/articles/2020/*   /articles/:splat   301
+/articles/2021/*   /articles/:splat   301
+/articles/2022/*   /articles/:splat   301
+/articles/2023/*   /articles/:splat   301
+/articles/2024/*   /articles/:splat   301
+/articles/2025/*   /articles/:splat   301
+/articles/2026/*   /articles/:splat   301
+/articles/2027/*   /articles/:splat   301
