@@ -194,7 +194,10 @@ git checkout -- path/to/file
 
 ## Next Steps
 
-- [ ] **Point custom domain** — domain/DNS being moved to a new MHD Cloudflare account (via GitHub login); current owner transfers midhertsdivers.com across, then point DNS at Netlify (keep Cloudflare as DNS, "DNS only"/grey cloud on Netlify records so Netlify handles SSL)
+- [ ] **Point custom domain** — domain/DNS being moved to a new MHD Cloudflare account (via GitHub login); current owner transfers midhertsdivers.com across, then point DNS at Netlify (keep Cloudflare as DNS, "DNS only"/grey cloud on Netlify records so Netlify handles SSL). NOTE: article redirects only take effect once the domain is live — verify a couple of old URLs (e.g. `/articles/2026/plymouth-june-2026`) redirect correctly after cutover.
+- [ ] **Finalise home page card images** — `already-a-diver.jpeg` and `try-scuba.jpeg` still to be updated
+- [ ] **Calendar page polish** — light visual improvements to the top text (Regular Sessions / Year Planner)
+- [ ] **Hero H1 sizing** — decide whether to keep "Mid Herts Divers" on one line (discuss with Sergey)
 - [ ] **Set up Instagram gallery** (optional) — connect Instagram API when ready to replace static gallery
 
 ## Completed
@@ -207,6 +210,7 @@ git checkout -- path/to/file
 - [x] Migrated articles from old site (Maldives, Scapa Flow, Dunoon, Isle of Man, Lanzarote, Pembrokeshire, Littlehampton, Hyperbaric Chamber, SeaSearch, Madeira, Philippines, Farnes, Red Sea, Cyprus, Fuerteventura, Portland, Plymouth, and more)
 - [x] Gallery page with images from trips
 - [x] Article image gallery grid (consecutive images display in a responsive grid with lightbox)
-- [x] Updated colour scheme and design
+- [x] Updated colour scheme and design (visual refresh PR merged)
 - [x] Set up Cloudinary CDN — all images migrated from old site, CMS configured for future uploads
 - [x] Join page improvements — skip-to links for new/qualified divers, separated DD buttons
+- [x] SEO redirects — old year-based article URLs (`/articles/YYYY/slug`) 301-redirect to new slug URLs via `src/_redirects`
