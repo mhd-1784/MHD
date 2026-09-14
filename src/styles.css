@@ -882,6 +882,59 @@ img {
     line-height: 1.5;
 }
 
+/* === Calendar info cards (Regular Sessions / Year Planner) === */
+.calendar-info-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+}
+
+.calendar-info-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 32px 28px;
+    box-shadow: var(--shadow);
+    display: flex;
+    flex-direction: column;
+}
+
+.calendar-info-icon {
+    width: 52px;
+    height: 52px;
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(var(--primary-rgb), 0.1);
+    color: var(--primary);
+    margin-bottom: 18px;
+}
+
+.calendar-info-card h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.4rem;
+    color: var(--dark);
+    margin-bottom: 12px;
+}
+
+.calendar-info-card p {
+    color: var(--text-light);
+    line-height: 1.7;
+    margin-bottom: 12px;
+}
+
+.calendar-info-card .btn-primary {
+    margin-top: auto;
+    align-self: flex-start;
+}
+
+@media (max-width: 680px) {
+    .calendar-info-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
 /* === Events === */
 .events-list {
     display: flex;
