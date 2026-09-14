@@ -199,13 +199,13 @@ git checkout -- path/to/file
 
 ## SEO Improvement Checklist
 
-# High Priority
+### High Priority
 
 - [ ] Add self-referencing canonical tags to all indexable pages.
 - [ ] Implement homepage JSON-LD structured data (SportsClub or Organization + WebSite).
 - [ ] Validate structured data using Google’s Rich Results Test or Schema Validator.
 
-# Medium Priority
+### Medium Priority
 
 - [ ] Add width and height attributes to all images to reduce Cumulative Layout Shift (CLS).
 - [ ] Implement Article schema on article pages.
