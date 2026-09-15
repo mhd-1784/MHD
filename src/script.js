@@ -1,3 +1,30 @@
+// Persist cookie banner dismissal between pages and visits
+const cookieBanner = document.getElementById('cookieBanner');
+const cookieBannerDismiss = document.getElementById('cookieBannerDismiss');
+
+if (cookieBanner && cookieBannerDismiss) {
+    const storageKey = 'mhdCookieNoticeDismissed';
+    let isDismissed = false;
+
+    try {
+        isDismissed = localStorage.getItem(storageKey) === 'true';
+    } catch (error) {
+        // Continue showing the notice when browser storage is unavailable.
+    }
+
+    cookieBanner.hidden = isDismissed;
+
+    cookieBannerDismiss.addEventListener('click', () => {
+        cookieBanner.hidden = true;
+
+        try {
+            localStorage.setItem(storageKey, 'true');
+        } catch (error) {
+            // The banner still remains dismissed for the current page.
+        }
+    });
+}
+
 // Mobile menu toggle
 const mobileToggle = document.getElementById('mobileToggle');
 const navLinks = document.getElementById('navLinks');

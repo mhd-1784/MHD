@@ -127,6 +127,10 @@ img {
     font-size: 0.9rem;
 }
 
+.cookie-banner[hidden] {
+    display: none;
+}
+
 .cookie-banner a {
     color: var(--accent);
     text-decoration: underline;
