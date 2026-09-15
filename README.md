@@ -194,7 +194,8 @@ git checkout -- path/to/file
 
 ## Next Steps
 
-- [ ] **Point custom domain** — domain/DNS being moved to a new MHD Cloudflare account (via GitHub login); current owner transfers midhertsdivers.com across, then point DNS at Netlify (keep Cloudflare as DNS, "DNS only"/grey cloud on Netlify records so Netlify handles SSL). NOTE: article redirects only take effect once the domain is live — verify a couple of old URLs (e.g. `/articles/2026/plymouth-june-2026`) redirect correctly after cutover.
+- [ ] **Enable "Force HTTPS" in Netlify** — Domain settings → HTTPS; auto-redirects any http:// visitor to https:// (toggle appears once the cert is provisioned)
+- [ ] **Redirect secondary domains to midhertsdivers.com** — set up Cloudflare Redirect Rules for `midhertsdivers.net`, `.co.uk`, `.org.uk`, `.uk` → `https://midhertsdivers.com` (301), so all owned domains funnel to the primary site
 - [ ] **Set up Instagram gallery** (optional) — connect Instagram API when ready to replace static gallery
 
 ## SEO Improvement Checklist
@@ -228,3 +229,4 @@ git checkout -- path/to/file
 - [x] **Finalise home page card images** — `already-a-diver.jpeg` and `try-scuba.jpeg` still to be updated
 - [x] **Calendar page polish** — light visual improvements to the top text (Regular Sessions / Year Planner)
 - [x] **Hero H1 sizing** — decide whether to keep "Mid Herts Divers" on one line (discuss with Sergey)
+- [x] **Went live** — pointed `midhertsdivers.com` + `www` at Netlify via Cloudflare (CNAME, DNS-only/grey cloud); Let's Encrypt SSL cert provisioned; article redirects verified working on the live domain
