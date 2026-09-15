@@ -23,6 +23,8 @@ The following services are registered under the club email **website@midhertsdiv
 
 This email is a shared group so access isn't tied to any single committee member. Add/remove members from the Google Group to manage who receives account notifications.
 
+Form enquiries (try-dive bookings and contact form) go to the **hello@midhertsdivers.com** Google Group — the same destination the old site used, so no change for whoever currently receives them. To change recipients, either manage the Google Group membership or update the notification address in Netlify → Forms → Form notifications.
+
 ## Local Development
 
 The site is built with [Eleventy](https://www.11ty.dev/) (a static site generator). To run it locally:
