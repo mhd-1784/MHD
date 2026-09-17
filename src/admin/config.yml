@@ -8,6 +8,7 @@ media_library:
   config:
     cloud_name: h2zix6yq
     api_key: "112573664623964"
+    upload_preset: mhd_uploads
     default_transformations:
       - - fetch_format: auto
           quality: auto

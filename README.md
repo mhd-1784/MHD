@@ -149,12 +149,25 @@ MHD/
 ## Writing Articles
 
 1. Go to `yoursite.com/admin/`
-2. Log in with your invited identity
+2. Log in with your invited identity (Netlify Identity — see below)
 3. Click "Articles" → "New Article"
-4. Write using the rich text editor, upload images
+4. Write using the rich text editor, and add images via the image field (see "Uploading Images" below)
 5. Click "Publish"
 
 Note: After publishing, Netlify automatically rebuilds the site. The new article will appear on the homepage and articles page within about 30 seconds.
+
+## Signing In & Uploading Images
+
+**To sign in to the CMS:** committee members log in at `yoursite.com/admin/` using their **Netlify Identity** account. These are invite-only — an existing admin invites them via Netlify → Identity → Invite users. That's the *only* login most people need.
+
+**Uploading images:** images are stored on **Cloudinary** (our image CDN), but contributors do **not** need a Cloudinary login. When you click an image field in the CMS:
+1. The Cloudinary media library opens inside the editor.
+2. Upload a new photo (drag & drop or browse), or pick an existing one from the library.
+3. Select it — the CMS inserts the Cloudinary URL automatically.
+
+This works because the site uses an **unsigned upload preset** (`mhd_uploads`) configured in `src/admin/config.yml`, so uploads go straight to Cloudinary on the account's behalf. No Cloudinary account sharing or separate login required — just the CMS (Netlify Identity) login.
+
+If you ever need to change how uploads behave (folder, transformations, etc.), the preset is managed in the Cloudinary dashboard under **Settings → Upload → Upload presets → `mhd_uploads`**.
 
 ## Updating the Calendar (Trips & Events)
 
