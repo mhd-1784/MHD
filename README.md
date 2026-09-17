@@ -193,7 +193,7 @@ The Calendar page's "Upcoming Trips & Events" list is managed through the CMS �
 - SSL: Free
 - Build minutes: Free (300/month)
 
-**Checking build-minute usage:** each production deploy (merge to `main`) and each PR deploy-preview build consumes build minutes. To see how many you've used and when the allowance resets, go to **Netlify → Team settings → Usage** (the "Build minutes" section shows usage this period and the reset date). This is the authoritative figure. Batching changes onto a branch and merging once (rather than many small pushes to `main`) keeps usage low. Automatic branch deploys are disabled in `netlify.toml` to avoid unnecessary builds.
+**Checking build-minute usage:** each production deploy (merge to `main`) and each PR deploy-preview build consumes build minutes. To see how many you've used and when the allowance resets, go to **Netlify → Usage & billing** (in the left sidebar). This is the authoritative figure. Batching changes onto a branch and merging once (rather than many small pushes to `main`) keeps usage low. Automatic branch deploys are disabled in `netlify.toml` to avoid unnecessary builds.
 
 ## Branch Workflow
 
