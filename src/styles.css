@@ -127,6 +127,10 @@ img {
     font-size: 0.9rem;
 }
 
+.cookie-banner[hidden] {
+    display: none;
+}
+
 .cookie-banner a {
     color: var(--accent);
     text-decoration: underline;
@@ -1502,7 +1506,6 @@ img {
     }
 
     .features {
-        grid-template-columns: 1fr;
         margin-top: -56px;
     }
 
@@ -1628,6 +1631,7 @@ img {
     }
 
     .features {
+        grid-template-columns: 1fr;
         margin-top: -44px;
         padding-bottom: 56px;
     }

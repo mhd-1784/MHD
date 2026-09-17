@@ -156,6 +156,33 @@ MHD/
 
 Note: After publishing, Netlify automatically rebuilds the site. The new article will appear on the homepage and articles page within about 30 seconds.
 
+## Updating the Calendar (Trips & Events)
+
+The Calendar page's "Upcoming Trips & Events" list is managed through the CMS — no code editing needed.
+
+**To add a trip or event:**
+
+1. Go to `yoursite.com/admin/` and log in.
+2. Click **"Events & Trips"** → **"New Events & Trips"**.
+3. Fill in the fields:
+   - **Title** — e.g. "Farne Islands Weekend"
+   - **Start Date** — the date (and time) the event begins.
+   - **End Date** — the date it ends. For a single-day event, set it the same as the start date.
+   - **Description** — a short summary shown on the card.
+   - **Contact** *(optional)* — who to contact about the trip (e.g. "Howard Smith").
+   - **Qualification Required** *(optional)* — e.g. "Ocean Diver+". Shown as a tag; leave blank if not applicable.
+   - **Spaces Available** — toggle ON if there are spaces, OFF to show "Full (taking reserves)".
+4. Click **"Publish"**.
+
+**To edit or remove an event:** open it under "Events & Trips" in the CMS, make changes (or delete it), and publish.
+
+**Good to know:**
+- **Past events disappear automatically.** Once an event's End Date has passed, it drops off the Calendar page on the next site build (and is hidden immediately for visitors via JavaScript). No need to manually delete old events.
+- Events are sorted automatically by start date (soonest first).
+- Each change triggers an automatic rebuild — the Calendar updates within about 30 seconds.
+
+**The Year Planner PDF** (the "Download Year Planner" button) is a separate file at `src/images/year-planner-2026.pdf`. To update it for a new year, upload the new PDF via the CMS media library (or replace the file in the repo) and update the link/filename in `src/calendar.njk` if the filename changes.
+
 ## Monthly Cost
 
 **£0** — Everything runs on Netlify's free tier:
@@ -164,6 +191,9 @@ Note: After publishing, Netlify automatically rebuilds the site. The new article
 - Forms: Free (100 submissions/month)
 - Identity: Free (5 invited users)
 - SSL: Free
+- Build minutes: Free (300/month)
+
+**Checking build-minute usage:** each production deploy (merge to `main`) and each PR deploy-preview build consumes build minutes. To see how many you've used and when the allowance resets, go to **Netlify → Team settings → Usage** (the "Build minutes" section shows usage this period and the reset date). This is the authoritative figure. Batching changes onto a branch and merging once (rather than many small pushes to `main`) keeps usage low. Automatic branch deploys are disabled in `netlify.toml` to avoid unnecessary builds.
 
 ## Branch Workflow
 
