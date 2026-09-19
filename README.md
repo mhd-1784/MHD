@@ -233,14 +233,9 @@ git checkout -- path/to/file
 ## SEO Improvement Checklist
 
 ### High Priority
-
-- [x] Add self-referencing canonical tags to all indexable pages.
-- [x] Implement homepage JSON-LD structured data (SportsClub or Organization + WebSite).
 - [ ] Validate structured data using Google’s Rich Results Test or Schema Validator.
 
 ### Medium Priority
-
-- [ ] Add width and height attributes to all images to reduce Cumulative Layout Shift (CLS).
 - [ ] Implement Article schema on article pages.
 - [ ] Implement BreadcrumbList schema on internal pages.
 
@@ -262,3 +257,7 @@ git checkout -- path/to/file
 - [x] **Calendar page polish** — light visual improvements to the top text (Regular Sessions / Year Planner)
 - [x] **Hero H1 sizing** — decide whether to keep "Mid Herts Divers" on one line (discuss with Sergey)
 - [x] **Went live** — pointed `midhertsdivers.com` + `www` at Netlify via Cloudflare (CNAME, DNS-only/grey cloud); Let's Encrypt SSL cert provisioned; article redirects verified working on the live domain
+- [x] Add width and height attributes to all images to reduce Cumulative Layout Shift (CLS).
+
+- [x] Add self-referencing canonical tags to all indexable pages.
+- [x] Implement homepage JSON-LD structured data (SportsClub or Organization + WebSite).
