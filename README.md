@@ -231,6 +231,7 @@ git checkout -- path/to/file
 - [ ] **Set up Instagram gallery** (optional) — connect Instagram API when ready to replace static gallery
 - [ ] **Generate an XML sitemap** — include all indexable pages and newly published articles automatically
 - [ ] **Set up Google Search Console** — verify midhertsdivers.com and submit the sitemap
+- [ ] **Set up Bing Webmaster Tools** — verify midhertsdivers.com and submit the sitemap
 - [ ] Validate structured data using Google’s Rich Results Test or Schema Validator.
 
 ## Completed
