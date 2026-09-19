@@ -229,10 +229,6 @@ git checkout -- path/to/file
 - [ ] **Enable "Force HTTPS" in Netlify** — Domain settings → HTTPS; auto-redirects any http:// visitor to https:// (toggle appears once the cert is provisioned)
 - [ ] **Redirect secondary domains to midhertsdivers.com** — set up Cloudflare Redirect Rules for `midhertsdivers.net`, `.co.uk`, `.org.uk`, `.uk` → `https://midhertsdivers.com` (301), so all owned domains funnel to the primary site
 - [ ] **Set up Instagram gallery** (optional) — connect Instagram API when ready to replace static gallery
-
-## SEO Improvement Checklist
-
-### High Priority
 - [ ] Validate structured data using Google’s Rich Results Test or Schema Validator.
 
 ## Completed
