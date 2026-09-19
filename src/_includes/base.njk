@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ title }} - Mid Herts Divers</title>
     <meta name="description" content="{{ excerpt or 'Mid Herts Divers - A friendly BSAC scuba diving and snorkelling club based in Hertfordshire. We offer try dives, training, UK and overseas trips.' }}">
+    <link rel="canonical" href="{{ site.url }}{{ page.url }}">
 
     <!-- Favicon -->
     <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
@@ -16,7 +17,7 @@
     <meta property="og:title" content="{{ title }} - Mid Herts Divers">
     <meta property="og:description" content="{{ excerpt or 'Mid Herts Divers - A friendly BSAC scuba diving and snorkelling club based in Hertfordshire.' }}">
     <meta property="og:image" content="{{ image or '/images/hero-divers.png' }}">
-    <meta property="og:url" content="https://midhertsdivers.com{{ page.url }}">
+    <meta property="og:url" content="{{ site.url }}{{ page.url }}">
     <meta property="og:site_name" content="Mid Herts Divers">
 
     <!-- Twitter Card -->
