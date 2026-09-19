@@ -26,6 +26,36 @@
     <meta name="twitter:description" content="{{ excerpt or 'Mid Herts Divers - A friendly BSAC scuba diving and snorkelling club based in Hertfordshire.' }}">
     <meta name="twitter:image" content="{{ image or '/images/hero-divers.png' }}">
 
+    {% if homepage %}
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "SportsClub",
+          "@id": "{{ site.url }}/#club",
+          "name": "Mid Herts Divers",
+          "url": "{{ site.url }}/",
+          "description": "A scuba diving and snorkelling club based at Hatfield Swim Centre in Hertfordshire.",
+          "logo": "{{ site.url }}/images/logo.png",
+          "areaServed": "Hertfordshire",
+          "sameAs": [
+            "https://facebook.com/midhertsdivers",
+            "https://instagram.com/midhertsdivers"
+          ]
+        },
+        {
+          "@type": "WebSite",
+          "@id": "{{ site.url }}/#website",
+          "name": "Mid Herts Divers",
+          "url": "{{ site.url }}/",
+          "publisher": { "@id": "{{ site.url }}/#club" }
+        }
+      ]
+    }
+    </script>
+    {% endif %}
+
     <link rel="stylesheet" href="/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

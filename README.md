@@ -235,7 +235,7 @@ git checkout -- path/to/file
 ### High Priority
 
 - [x] Add self-referencing canonical tags to all indexable pages.
-- [ ] Implement homepage JSON-LD structured data (SportsClub or Organization + WebSite).
+- [x] Implement homepage JSON-LD structured data (SportsClub or Organization + WebSite).
 - [ ] Validate structured data using Google’s Rich Results Test or Schema Validator.
 
 ### Medium Priority
