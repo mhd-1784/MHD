@@ -235,10 +235,6 @@ git checkout -- path/to/file
 ### High Priority
 - [ ] Validate structured data using Google’s Rich Results Test or Schema Validator.
 
-### Medium Priority
-- [ ] Implement Article schema on article pages.
-- [ ] Implement BreadcrumbList schema on internal pages.
-
 ## Completed
 
 - [x] Eleventy static site generator with automatic article page generation from markdown
@@ -261,3 +257,4 @@ git checkout -- path/to/file
 
 - [x] Add self-referencing canonical tags to all indexable pages.
 - [x] Implement homepage JSON-LD structured data (SportsClub or Organization + WebSite).
+- [x] Implement Article schema on article pages.

@@ -56,6 +56,10 @@
     </script>
     {% endif %}
 
+    {% if article %}
+    <script type="application/ld+json">{{ title | articleJsonLd(page.url, date, author, image, excerpt, site.url) | safe }}</script>
+    {% endif %}
+
     {% if homepage %}
     <link rel="preload" as="image" href="/images/Lanz1-hero.jpg" fetchpriority="high">
     {% endif %}

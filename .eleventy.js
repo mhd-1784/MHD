@@ -44,6 +44,27 @@ module.exports = function(eleventyConfig) {
         return text.length > 150 ? text.substring(0, 150) + '...' : text;
     });
 
+    eleventyConfig.addFilter("articleJsonLd", function(title, url, date, author, image, excerpt, siteUrl) {
+        const canonicalUrl = `${siteUrl}${url}`;
+        const article = {
+            "@context": "https://schema.org",
+            "@type": "Article",
+            "@id": `${canonicalUrl}#article`,
+            headline: title,
+            mainEntityOfPage: canonicalUrl,
+            datePublished: new Date(date).toISOString(),
+            author: author === "Mid Herts Divers"
+                ? { "@id": `${siteUrl}/#club` }
+                : { "@type": "Person", name: author },
+            publisher: { "@id": `${siteUrl}/#club` }
+        };
+
+        if (excerpt) article.description = excerpt;
+        if (image) article.image = new URL(image, siteUrl).href;
+
+        return JSON.stringify(article).replace(/</g, "\\u003c");
+    });
+
     return {
         dir: {
             input: "src",
