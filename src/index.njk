@@ -36,7 +36,7 @@ homepage: true
 <section class="features container">
     <div class="feature-card">
         <div class="feature-media">
-            <img src="/images/try-scuba-maldives.jpeg" alt="Diver training in open water" loading="lazy">
+            <img src="/images/try-scuba-maldives.jpeg" alt="Diver training in open water" width="1182" height="665" loading="lazy">
         </div>
         <div class="feature-heading">
             <div class="feature-icon">
@@ -49,7 +49,7 @@ homepage: true
     </div>
     <div class="feature-card">
         <div class="feature-media">
-            <img src="/images/already-a-diver.jpeg" alt="Qualified diver underwater" loading="lazy">
+            <img src="/images/already-a-diver.jpeg" alt="Qualified diver underwater" width="888" height="468" loading="lazy">
         </div>
         <div class="feature-heading">
             <div class="feature-icon">
@@ -71,7 +71,7 @@ homepage: true
             <a href="/try-dive/" class="btn-primary btn-large">Book Now</a>
         </div>
         <div class="try-scuba-image">
-            <img src="/images/try-scuba.jpeg" alt="Try Scuba diving experience at Hatfield Swim Centre" style="width:100%; border-radius:var(--radius); box-shadow: 0 10px 40px rgba(0,0,0,0.12);">
+            <img src="/images/try-scuba.jpeg" alt="Try Scuba diving experience at Hatfield Swim Centre" width="910" height="339" style="width:100%; height:auto; border-radius:var(--radius); box-shadow: 0 10px 40px rgba(0,0,0,0.12);">
         </div>
     </div>
 </section>
@@ -88,7 +88,7 @@ homepage: true
             <article class="article-card">
                 <div class="article-image">
                     {% if article.data.image %}
-                    <img src="{{ article.data.image }}" alt="{{ article.data.title }}" loading="lazy">
+                    <img src="{{ article.data.image }}" alt="{{ article.data.title }}" width="400" height="200" loading="lazy">
                     {% else %}
                     <div class="placeholder-image" style="height:200px;border-radius:0;">
                         <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
@@ -139,7 +139,7 @@ homepage: true
             {% for item in collections.galleryImages %}
             {% if loop.index <= 3 %}
             <div class="gallery-item">
-                <img src="{{ item.data.image }}" alt="{{ item.data.caption }}" loading="lazy">
+                <img src="{{ item.data.image }}" alt="{{ item.data.caption }}" width="400" height="220" loading="lazy">
                 <p class="gallery-caption">{{ item.data.caption }}</p>
             </div>
             {% endif %}

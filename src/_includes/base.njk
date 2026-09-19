@@ -56,6 +56,9 @@
     </script>
     {% endif %}
 
+    {% if homepage %}
+    <link rel="preload" as="image" href="/images/Lanz1-hero.jpg" fetchpriority="high">
+    {% endif %}
     <link rel="stylesheet" href="/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -71,7 +74,7 @@
     <!-- Navigation -->
     <header class="header">
         <nav class="nav container">
-            <a href="/" class="logo"><img src="/images/logo.png" alt="Mid Herts Divers logo" class="logo-img"> Mid Herts Divers</a>
+            <a href="/" class="logo"><img src="/images/logo.png" alt="Mid Herts Divers logo" class="logo-img" width="106" height="64"> Mid Herts Divers</a>
             <ul class="nav-links" id="navLinks">
                 <li><a href="/">Home</a></li>
                 <li><a href="/articles/">Articles</a></li>
@@ -102,7 +105,7 @@
     <footer class="footer">
         <div class="container footer-content">
             <div class="footer-brand">
-                <a href="/" class="footer-logo"><img src="/images/logo.png" alt="Mid Herts Divers logo" class="footer-logo-img"> Mid Herts Divers</a>
+                <a href="/" class="footer-logo"><img src="/images/logo.png" alt="Mid Herts Divers logo" class="footer-logo-img" width="106" height="64"> Mid Herts Divers</a>
                 <p>BSAC branch 1784 in Hertfordshire</p>
             </div>
             <div class="footer-section">

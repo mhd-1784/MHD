@@ -16,7 +16,7 @@ permalink: /gallery/
         <div class="gallery-grid">
             {% for item in collections.galleryImages %}
             <div class="gallery-item">
-                <img src="{{ item.data.image }}" alt="{{ item.data.caption }}" loading="lazy">
+                <img src="{{ item.data.image }}" alt="{{ item.data.caption }}" width="400" height="220" loading="lazy">
                 <p class="gallery-caption">{{ item.data.caption }}</p>
             </div>
             {% endfor %}
