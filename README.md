@@ -244,20 +244,10 @@ git checkout -- path/to/file
 - [ ] **Enable "Force HTTPS" in Netlify** — Domain settings → HTTPS; auto-redirects any http:// visitor to https:// (toggle appears once the cert is provisioned)
 - [ ] **Redirect secondary domains to midhertsdivers.com** — set up Cloudflare Redirect Rules for `midhertsdivers.net`, `.co.uk`, `.org.uk`, `.uk` → `https://midhertsdivers.com` (301), so all owned domains funnel to the primary site
 - [ ] **Set up Instagram gallery** (optional) — connect Instagram API when ready to replace static gallery
-
-## SEO Improvement Checklist
-
-### High Priority
-
-- [ ] Add self-referencing canonical tags to all indexable pages.
-- [ ] Implement homepage JSON-LD structured data (SportsClub or Organization + WebSite).
+- [ ] **Generate an XML sitemap** — include all indexable pages and newly published articles automatically
+- [ ] **Set up Google Search Console** — verify midhertsdivers.com and submit the sitemap
+- [ ] **Set up Bing Webmaster Tools** — verify midhertsdivers.com and submit the sitemap
 - [ ] Validate structured data using Google’s Rich Results Test or Schema Validator.
-
-### Medium Priority
-
-- [ ] Add width and height attributes to all images to reduce Cumulative Layout Shift (CLS).
-- [ ] Implement Article schema on article pages.
-- [ ] Implement BreadcrumbList schema on internal pages.
 
 ## Completed
 
@@ -277,3 +267,8 @@ git checkout -- path/to/file
 - [x] **Calendar page polish** — light visual improvements to the top text (Regular Sessions / Year Planner)
 - [x] **Hero H1 sizing** — decide whether to keep "Mid Herts Divers" on one line (discuss with Sergey)
 - [x] **Went live** — pointed `midhertsdivers.com` + `www` at Netlify via Cloudflare (CNAME, DNS-only/grey cloud); Let's Encrypt SSL cert provisioned; article redirects verified working on the live domain
+- [x] Add width and height attributes to all images to reduce Cumulative Layout Shift (CLS).
+
+- [x] Add self-referencing canonical tags to all indexable pages.
+- [x] Implement homepage JSON-LD structured data (SportsClub or Organization + WebSite).
+- [x] Implement Article schema on article pages.
