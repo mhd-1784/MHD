@@ -5,6 +5,8 @@ author: Philip Allan
 image: /images/uploads/2026-08-29-argeles-fried-egg-jellyfish.jpg
 excerpt: There was lots of wildlife to enjoy, particularly in the Côte Vermeille
   Nature Reserve
+gallery:
+  - /images/uploads/2026-09-03-argeles-shoal.jpg
 ---
 In early September I was one of a party of six, four divers and two non-diving partners who went for a week to Argelès-sur-Mer in the south of France. Argelès is a coastal resort close to the Spanish border, set close to where the Pyrenees mountains meet the sea, making it an area of considerable natural beauty with a rich local history. It also boasts some excellent diving, and the purpose of the trip was to enjoy both. 
 
