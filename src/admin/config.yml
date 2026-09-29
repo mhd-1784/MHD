@@ -22,6 +22,12 @@ collections:
       - { label: "Featured Image", name: "image", widget: "image", required: false }
       - { label: "Excerpt", name: "excerpt", widget: "text", pattern: ['.{0,200}', "Must be 200 characters or less"] }
       - { label: "Body", name: "body", widget: "markdown" }
+      - label: "Photo Gallery"
+        name: "gallery"
+        widget: "list"
+        required: false
+        summary: "{{fields.image}}"
+        field: { label: "Photo", name: "image", widget: "image" }
       - { label: "Tags", name: "tags", widget: "list", required: false }
 
   - name: "gallery"

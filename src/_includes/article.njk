@@ -16,6 +16,14 @@ layout: base.njk
             <img src="{{ image }}" alt="{{ title }}" style="width:100%; border-radius:12px; margin-bottom:32px;">
             {% endif %}
             {{ content | safe }}
+
+            {% if gallery and gallery.length %}
+            <div class="article-gallery">
+                {% for photo in gallery %}
+                <img src="{{ photo.image }}" alt="{{ title }} photo {{ loop.index }}" loading="lazy">
+                {% endfor %}
+            </div>
+            {% endif %}
         </div>
         <div style="margin-top:48px; padding-top:24px; border-top:1px solid #eee;">
             <a href="/articles/" style="color:var(--primary); font-weight:600;">&laquo; Back to all articles</a>
