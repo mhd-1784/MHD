@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ title }} - Mid Herts Divers</title>
     <meta name="description" content="{{ excerpt or 'Mid Herts Divers - A friendly BSAC scuba diving and snorkelling club based in Hertfordshire. We offer try dives, training, UK and overseas trips.' }}">
+    <link rel="canonical" href="{{ site.url }}{{ page.url }}">
 
     <!-- Favicon -->
     <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
@@ -16,7 +17,7 @@
     <meta property="og:title" content="{{ title }} - Mid Herts Divers">
     <meta property="og:description" content="{{ excerpt or 'Mid Herts Divers - A friendly BSAC scuba diving and snorkelling club based in Hertfordshire.' }}">
     <meta property="og:image" content="{{ image or '/images/hero-divers.png' }}">
-    <meta property="og:url" content="https://midhertsdivers.com{{ page.url }}">
+    <meta property="og:url" content="{{ site.url }}{{ page.url }}">
     <meta property="og:site_name" content="Mid Herts Divers">
 
     <!-- Twitter Card -->
@@ -25,6 +26,43 @@
     <meta name="twitter:description" content="{{ excerpt or 'Mid Herts Divers - A friendly BSAC scuba diving and snorkelling club based in Hertfordshire.' }}">
     <meta name="twitter:image" content="{{ image or '/images/hero-divers.png' }}">
 
+    {% if homepage %}
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "SportsClub",
+          "@id": "{{ site.url }}/#club",
+          "name": "Mid Herts Divers",
+          "url": "{{ site.url }}/",
+          "description": "A scuba diving and snorkelling club based at Hatfield Swim Centre in Hertfordshire.",
+          "logo": "{{ site.url }}/images/logo.png",
+          "areaServed": "Hertfordshire",
+          "sameAs": [
+            "https://facebook.com/midhertsdivers",
+            "https://instagram.com/midhertsdivers"
+          ]
+        },
+        {
+          "@type": "WebSite",
+          "@id": "{{ site.url }}/#website",
+          "name": "Mid Herts Divers",
+          "url": "{{ site.url }}/",
+          "publisher": { "@id": "{{ site.url }}/#club" }
+        }
+      ]
+    }
+    </script>
+    {% endif %}
+
+    {% if article %}
+    <script type="application/ld+json">{{ title | articleJsonLd(page.url, date, author, image, excerpt, site.url) | safe }}</script>
+    {% endif %}
+
+    {% if homepage %}
+    <link rel="preload" as="image" href="/images/Lanz1-hero.jpg" fetchpriority="high">
+    {% endif %}
     <link rel="stylesheet" href="/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -40,7 +78,7 @@
     <!-- Navigation -->
     <header class="header">
         <nav class="nav container">
-            <a href="/" class="logo"><img src="/images/logo.png" alt="Mid Herts Divers logo" class="logo-img"> Mid Herts Divers</a>
+            <a href="/" class="logo"><img src="/images/logo.png" alt="Mid Herts Divers logo" class="logo-img" width="106" height="64"> Mid Herts Divers</a>
             <ul class="nav-links" id="navLinks">
                 <li><a href="/">Home</a></li>
                 <li><a href="/articles/">Articles</a></li>
@@ -71,7 +109,7 @@
     <footer class="footer">
         <div class="container footer-content">
             <div class="footer-brand">
-                <a href="/" class="footer-logo"><img src="/images/logo.png" alt="Mid Herts Divers logo" class="footer-logo-img"> Mid Herts Divers</a>
+                <a href="/" class="footer-logo"><img src="/images/logo.png" alt="Mid Herts Divers logo" class="footer-logo-img" width="106" height="64"> Mid Herts Divers</a>
                 <p>BSAC branch 1784 in Hertfordshire</p>
             </div>
             <div class="footer-section">
