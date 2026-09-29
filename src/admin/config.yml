@@ -26,7 +26,6 @@ collections:
         name: "gallery"
         widget: "list"
         required: false
-        summary: "{{fields.image}}"
         field: { label: "Photo", name: "image", widget: "image" }
       - { label: "Tags", name: "tags", widget: "list", required: false }
 

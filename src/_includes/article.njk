@@ -20,7 +20,8 @@ layout: base.njk
             {% if gallery and gallery.length %}
             <div class="article-gallery">
                 {% for photo in gallery %}
-                <img src="{{ photo.image }}" alt="{{ title }} photo {{ loop.index }}" loading="lazy">
+                {% set photoSrc = photo.image if photo.image else photo %}
+                <img src="{{ photoSrc }}" alt="{{ title }} photo {{ loop.index }}" loading="lazy">
                 {% endfor %}
             </div>
             {% endif %}
