@@ -25,6 +25,8 @@ This email is a shared group so access isn't tied to any single committee member
 
 Form enquiries (try-dive bookings and contact form) go to the **hello@midhertsdivers.com** Google Group — the same destination the old site used, so no change for whoever currently receives them. To change recipients, either manage the Google Group membership or update the notification address in Netlify → Forms → Form notifications.
 
+**Keeping a record of enquiries (CSV export):** every form submission is automatically logged by Netlify — you don't need to copy details out of the notification emails. To view or export them: Netlify → your site → **Forms**, click into the `contact` or `try-dive` form, and use **"Download as CSV"** to get a spreadsheet-ready export for your master record. Submissions are retained until you delete them. (Free tier allows 100 submissions/month, which is ample for the club.)
+
 ## Local Development
 
 The site is built with [Eleventy](https://www.11ty.dev/) (a static site generator). To run it locally:
