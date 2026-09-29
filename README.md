@@ -153,10 +153,20 @@ MHD/
 1. Go to `yoursite.com/admin/`
 2. Log in with your invited identity (Netlify Identity — see below)
 3. Click "Articles" → "New Article"
-4. Write using the rich text editor, and add images via the image field (see "Uploading Images" below)
+4. Write using the rich text editor, and add images (see "Adding photos to an article" below)
 5. Click "Publish"
 
 Note: After publishing, Netlify automatically rebuilds the site. The new article will appear on the homepage and articles page within about 30 seconds.
+
+### Adding photos to an article
+
+There are three image options on the article editor:
+
+- **Featured Image** (top of the form) — the single headline photo. This is what shows as the article's thumbnail on the Articles page and homepage. Use it for the best lead photo.
+- **Photo Gallery** (below the Body) — click **"Add photo"** for each image you want to add; repeat as many times as you like. These display in a responsive grid at the bottom of the article, and clicking any opens it full-screen (lightbox). This is the easy way to add lots of trip photos.
+- **Inline images in the Body** — you can also insert photos directly within the article text using the image button in the Body editor's toolbar, if you want them interspersed with paragraphs. Consecutive inline images automatically arrange into a grid too.
+
+Most trip reports work best as: a **Featured Image** for the headline, the write-up in the **Body**, then the rest of the photos in the **Photo Gallery**.
 
 ## Signing In & Uploading Images
 
