@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "description": "Mid Herts Divers - Scuba Diving and Snorkelling Club website",
   "scripts": {
-    "build": "eleventy",
+    "optimize-images": "node scripts/optimize-images.js",
+    "build": "node scripts/optimize-images.js && eleventy",
     "dev": "eleventy --serve",
     "clean": "rm -rf _site"
   },
@@ -15,6 +16,7 @@
   "author": "Mid Herts Divers",
   "license": "ISC",
   "devDependencies": {
-    "@11ty/eleventy": "^3.0.0"
+    "@11ty/eleventy": "^3.0.0",
+    "sharp": "^0.35.5"
   }
 }
