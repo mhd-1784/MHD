@@ -1,5 +1,5 @@
 ---
-title: 6Swanage, September 2025 & PADI Crossover Experience
+title: Swanage, September 2026 & PADI Crossover Experience
 date: 2026-10-02T20:21:00.000+01:00
 author: Sergey Kobzar
 image: /images/uploads/2026-09-12-swanage-b.jpg
