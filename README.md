@@ -25,7 +25,7 @@ This email is a shared group so access isn't tied to any single committee member
 
 Form enquiries (try-dive bookings and contact form) go to the **hello@midhertsdivers.com** Google Group — the same destination the old site used, so no change for whoever currently receives them. To change recipients, either manage the Google Group membership or update the notification address in Netlify → Forms → Form notifications.
 
-**Keeping a record of enquiries (CSV export):** every form submission is automatically logged by Netlify — you don't need to copy details out of the notification emails. To view or export them: Netlify → your site → **Forms**, click into the `contact` or `try-dive` form, and use **"Download as CSV"** to get a spreadsheet-ready export for your master record. Submissions are retained until you delete them. (Free tier allows 100 submissions/month, which is ample for the club.)
+**Keeping a record of enquiries (CSV export):** every form submission is automatically logged by Netlify — you don't need to copy details out of the notification emails. To view or export them: Netlify → your site → **Forms**, click into the `contact` or `try-dive` form, and use **"Download as CSV"** to get a spreadsheet-ready export for your master record. Submissions are retained until you delete them. (Form submissions are free and unlimited on Netlify's credit-based plans.)
 
 ## Local Development
 
@@ -158,6 +158,17 @@ MHD/
 
 Note: After publishing, Netlify automatically rebuilds the site. The new article will appear on the homepage and articles page within about 30 seconds.
 
+### Editorial workflow (Draft → In review → Ready → Publish)
+
+The CMS uses an editorial workflow, so saving does **not** put anything live. This matters because every change that reaches `main` is a production deploy costing 15 Netlify credits.
+
+- **Saving** an article, event or gallery item keeps it as a **draft** on its own branch. Save as often as you like; it costs no credits and nothing goes live.
+- Each draft gets a free **deploy preview** (a temporary copy of the site) so you can check how it looks before it is published.
+- Open the **Workflow** tab at the top of the CMS to see all drafts in three columns: **Draft**, **In review** and **Ready**. Drag an entry between columns, or use the **Set status** menu inside the editor.
+- When an entry is in **Ready**, click **Publish** (inside the editor) to make it live. That is the single deploy.
+
+Tip: finish writing, check the preview, then publish once. Publishing is also how edits to existing articles go live.
+
 ### Adding photos to an article
 
 There are three image options on the article editor:
@@ -213,12 +224,18 @@ The Calendar page's "Upcoming Trips & Events" list is managed through the CMS �
 **£0** — Everything runs on Netlify's free tier:
 - Static hosting: Free
 - Serverless functions: Free (125k requests/month)
-- Forms: Free (100 submissions/month)
+- Forms: Free (unlimited submissions)
 - Identity: Free (5 invited users)
 - SSL: Free
-- Build minutes: Free (300/month)
+- Credits: 300 per month, hard limit (resets each billing cycle)
 
-**Checking build-minute usage:** each production deploy (merge to `main`) and each PR deploy-preview build consumes build minutes. To see how many you've used and when the allowance resets, go to **Netlify → Usage & billing** (in the left sidebar). This is the authoritative figure. Batching changes onto a branch and merging once (rather than many small pushes to `main`) keeps usage low. Automatic branch deploys are disabled in `netlify.toml` to avoid unnecessary builds.
+**How Netlify credits work (important):** the free plan includes 300 credits a month. Per Netlify's docs:
+- Each **production deploy** (any push or merge to `main`, including every CMS save when the editorial workflow is off) costs **15 credits**. That is roughly 20 production deploys a month.
+- **Deploy previews and branch deploys are not metered**, so previewing work in a pull request is free.
+- **Web bandwidth** costs 20 credits per GB and **web requests** 2 credits per 10,000. Images served from the repo (new CMS uploads) count towards this; images on Cloudinary do not.
+- **Form submissions are free** and unlimited.
+
+To see what you've used and when the allowance resets, go to **Netlify → Usage & billing** (left sidebar). That is the authoritative figure, and it breaks usage down by deploys, bandwidth and requests. To keep usage low: batch changes on a branch and merge once, and use the CMS editorial workflow (below) so that a multi-save article costs one deploy. If the allowance is regularly too tight, the Personal plan ($9/month) includes 1,000 credits.
 
 ## Branch Workflow
 

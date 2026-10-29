@@ -2,6 +2,11 @@ backend:
   name: git-gateway
   branch: main
 
+# Editorial workflow: saves go to a draft branch (free deploy previews) and only
+# "Publish" merges to main. This means one production deploy per article instead of
+# one per save, which matters because each production deploy costs 15 Netlify credits.
+publish_mode: editorial_workflow
+
 # Image storage — uploaded images are committed to the repo under src/images/uploads
 # and served from /images/uploads. Contributors only need their CMS (Netlify Identity)
 # login; no separate Cloudinary login required.
