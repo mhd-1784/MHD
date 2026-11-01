@@ -237,6 +237,13 @@ The Calendar page's "Upcoming Trips & Events" list is managed through the CMS �
 
 To see what you've used and when the allowance resets, go to **Netlify → Usage & billing** (left sidebar). That is the authoritative figure, and it breaks usage down by deploys, bandwidth and requests. To keep usage low: batch changes on a branch and merge once, and use the CMS editorial workflow (below) so that a multi-save article costs one deploy. If the allowance is regularly too tight, the Personal plan ($9/month) includes 1,000 credits.
 
+**Bulk entry (e.g. after trips night) — pause auto publishing:** adding lots of events or articles in one sitting means one production deploy (15 credits) per item, which can use the whole month's allowance (this happened in Oct/Nov 2026, when about 20 events were added in a week). To avoid it:
+1. Before you start, go to **Netlify → your site → Deploys** and click **Stop auto publishing**. New builds will still run, but the live site stays on the current deploy.
+2. Add everything in the CMS as normal.
+3. When you've finished, open the newest deploy in the Deploys list and click **Publish deploy**. Then click **Start auto publishing** again so normal updates go live.
+
+Status: **untested.** It is based on Netlify's credit docs, which say that only *published* production deploys cost 15 credits, so building without publishing should be free. Button names may differ slightly. Before relying on it, try it once with a small change and check **Usage & billing** afterwards to confirm that only the final publish used credits. Don't forget step 3, or the site will stop updating.
+
 ## Branch Workflow
 
 To avoid breaking the live site, use feature branches for changes:
