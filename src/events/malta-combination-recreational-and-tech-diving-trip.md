@@ -1,5 +1,5 @@
 ---
-title: "Malta Combination: Recreational and Tech Diving Trip"
+title: "Malta Combo: Recreational and Tech Diving Trip"
 startDate: 2027-09-11T09:56:00.000+01:00
 endDate: 2027-09-18T09:56:00.000+01:00
 description: |-
