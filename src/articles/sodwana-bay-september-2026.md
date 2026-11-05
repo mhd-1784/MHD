@@ -16,7 +16,7 @@ World Heritage Site. And it shows, with a profusion of fantastic marine life on 
 
 excellent condition!
 
-.
+
 
 On the dives we admired a profusion of Butterflyfish, Anthias, Angel Fish, Trumpet Fish, Box Fish, Blue
 
@@ -28,7 +28,7 @@ interest in the divers! The reefs were mainly quite shallow so hour-plus diving 
 
 also jumped in with wild dolphins at one point and (on one dive) heard humpback whale calls.
 
-.
+![](/images/uploads/2026-09-sodwana-1.jpg)
 
 We stayed at Siso Dwana Lodge (https://www.sisodwana.com/) who provided very comfortable
 
@@ -38,7 +38,7 @@ This involved some impressively skilful skippering, threading through the breake
 
 and then beaching the entire boat complete with divers and gear after the diving!
 
-.
+
 
 At the end of the week we had a 2-day trip over the border into Mozambique, at the beach resort of
 
@@ -52,13 +52,15 @@ sampled the infamous R&R Cocktail at Fernando's bar (served in half litre glasse
 
 largely of the local rum!)
 
-.
+![](/images/uploads/2026-09-sodwana-2.jpg)
 
 On the final day our hosts took us out to the Hluhluwe–Umfolozi Game Reserve where we had a
 
 fantastic day admiring Rhinos, Elephants, Giraffe, Warthogs, Buffalo, Wildebeest, Nyala, Warthogs and
 
 Hippos! Truly one to remember.
+
+![](/images/uploads/2026-09-sodwana-3.jpg)
 
 Many thanks to Andrew and Sue of Siso Dwana Lodge who were fantastic hosts and really went the
 
