@@ -66,7 +66,7 @@ Many thanks to Andrew and Sue of Siso Dwana Lodge who were fantastic hosts and r
 
 extra mile with the diving, accommodation and excursions. Highly recommended.
 
-.
+
 
 Finally, thanks also to James Pemberton for organising: if anyone wants to give this a rinse and
 
